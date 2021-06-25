@@ -1,0 +1,72 @@
+body{background:#e6e6e6;}
+.mt5{margin-top:5px;}
+/*顶部区域导航*/
+.ej_des_nav{height:auto;margin-top:10px;background:#fff;}
+.ej_des_nav ul{width:100%;}
+.ej_des_nav ul li{border-bottom:1px solid #eee;line-height:40px;}
+.ej_des_nav ul li p.ej_itemName{width:105px;height:40px;float:left;text-align:right;font-weight:bold;color:#333;}
+.ej_des_nav ul li p.ej_info{overflow:hidden;line-height:40px;/*float:left;*/padding-left:17px;}
+.ej_des_nav ul li p.ej_info a{padding: 3px 8px;margin-right: 17px;color: #666666;text-decoration: none;border-radius: 3px;display: inline-block;line-height: 18px;}
+.ej_des_nav ul li p.ej_info a:hover{background:#ed182a!important;color:#fff!important;}
+.ej_des_nav ul li p.ej_info a.ej_active{background:#ed182a!important;color:#fff!important;}
+/*设计师案例二级*/
+.ej_des_upNav{height:40px;line-height:40px;font-size:12px;color:#666;}
+.ej_des_upNav a{color:#666;float:left;}
+.ej_des_upNav a:hover{color:#ed182a;}
+.ej_des_upNav img{width:14px;height:12px;float:left;margin-top:14px;margin-right:5px;}
+.ej_des_upNav span{float:left;margin:0 5px;}
+/*索引*/
+.pull-right { float: right !important; }
+.pull-left { float: left !important; }
+.ej_des_alllist-sort{background:#fff;}
+.ej_des_alllist-sort-ul{width:auto; border: 1px #eaeaea solid; overflow:hidden;}
+.ej_des_alllist-sort-ul li.clearfix{line-height: 40px; border-top: 1px #eaeaea dotted;background:#f8f8f8;position: relative;top:-1px;overflow:hidden}
+.ej_des_alllist-sort-ul-title{width: 109px;text-align: center;color:#999;}
+.ej_des_alllist-sort-ul-angle{padding: 0 30px 0 30px ;border-left: 1px #eaeaea solid; width:1028px; overflow:hidden; background: #fff; }
+.ej_des_alllist-sort-ul-angle li{padding-right: 33px; display: inline;}
+.ej_des_alllist-sort-ul-angle li a{ display:inline-block; white-space:nowrap;}
+.ej_des_alllist-sort .active{color: #ed182a}
+.ej_des_alllist-sort-ul li{position: relative;}
+.ej_des_alllist-sort-ul li .ico{width: 16px;height: 16px;background: url() no-repeat 0 -75px;cursor: pointer; position: absolute;right: 10px;top: 10px;}
+.ej_des_alllist-sort-ul li.current ul{max-height: 80px;overflow: hidden;}
+.ej_des_alllist-sort-ul li.current .ico{background-position: 0 -58px;}
+/*设计师列表*/
+.text-center {
+    text-align: center;
+}
+.clearfix:after, .row:after { content: ''; display: block; clear: both; height: 0; visibility: hidden; }
+.ej_des_col-xs-1, .ej_des_col-xs-2, .ej_des_col-xs-3, .ej_des_col-xs-4, .ej_des_col-xs-5, .ej_des_col-xs-6, .ej_des_col-xs-7, .ej_des_col-xs-8, .ej_des_col-xs-9, .ej_des_col-xs-10, .ej_des_col-xs-11, .ej_des_col-xs-12 {
+    float: left;
+}
+.ej_des_col-xs-3 {
+    width: 25%;
+
+}
+.ej_des_col-xs-6 {
+    width: 50%;
+}
+.bg-white {
+    background: #fff;
+}
+
+.ej_des_elite-list .list{ margin-top:20px; padding:20px 15px; overflow:hidden;}
+.ej_des_elite-list .list .item{ width:280px; height:370px; line-height:22px; border:solid 1px #f8f8f8; box-shadow:0 1px 1px #f5f5f5; margin:0 auto 10px; position:relative;}
+
+.ej_des_elite-list .list .item img{ display:block;}
+.ej_des_elite-list .list .box1{ position:relative; width:100%; width:280px; height:280px; overflow:hidden;}
+.ej_des_elite-list .list .box1 .shadow{ width:100%; height:100%; position:absolute; left:0; top:0; background:#000; opacity:.5;visibility:hidden; opacity:0; filter:alpha(opacity=0); transition:all ease .2s;-webkit-transition:all ease .2s;}
+.ej_des_elite-list .list .box1 p{ position:absolute; width:100%; bottom:0; z-index:1; visibility:hidden; opacity:0; filter:alpha(opacity=0);transition:all ease .2s;-webkit-transition:all ease .2s;}
+.ej_des_elite-list .list .box1:hover p{ visibility:visible; opacity:1; filter:alpha(opacity=100);}
+.ej_des_elite-list .list .box1 .zixun,.ej_des_elite-list .list .box1 .guihua{ position:absolute;bottom:0;width:137px; height:34px; line-height:34px; border:solid 1px #fff; color:#000;transition:all ease .1s; -webkit-transition:all ease .1s; background:#f1f1f1;}
+.ej_des_elite-list .list .box1 p a.zixun{ left:0; }
+.ej_des_elite-list .list .box1 p a.guihua{right:0;}
+.ej_des_elite-list .list .box1 p a:hover{ background:#ed182a; border-color:#ed182a;color:#fff;}
+.ej_des_elite-list .list .box2{ width:245px; border-bottom:solid 1px #ddd; line-height:30px; margin:0 auto;}
+.ej_des_elite-list .list .name{ font-size:18px; display:inline-block; max-width:6em; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; vertical-align:middle;}
+.ej_des_elite-list .list .job{ position:relative; top:3px;}
+.ej_des_elite-list .list .box3{ width:245px; height:45px; overflow:hidden; margin:0 auto; text-align:left; color:#666; padding:5px 0;}
+.ej_des_elite-list .list .box3 .ej_des_col-xs-12{ white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+
+
+
+

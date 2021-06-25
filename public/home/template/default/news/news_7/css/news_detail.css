@@ -1,0 +1,72 @@
+
+.lhw_pinpai_weinhua{ width:1200px; margin:0 auto; border-bottom:1px solid #E30820;margin-top:30px; line-height: 24px; overflow:hidden;}
+.lhw_pinpai_weinhua p{ color:#8F8E8E; font-size:14px; float:left;}
+.lhw_pinpai_weinhua em{ color:#E51F36; float:left;font-size:14px;}
+/*关于我们单页左边*/
+.ej_aboutSingle_left{width:1200px;float:left;background:#fff;margin-top:47px;}
+.ej_aboutSingle_leftT h1{width: 1160px;height: 30px;line-height: 30px;font-size: 20px;font-weight: bold;text-align: center;margin: 30px auto;padding: 10px 0;}
+.ej_aboutSingle_leftTips{width:1160px;;height:25px;margin:0 auto;border-bottom:1px solid #5b5b5b;padding-bottom:4px;}
+.ej_aboutSingle_leftTips ul{width:100%;}
+.ej_aboutSingle_leftTips ul li{width:33%;height:25px;line-height:25px;font-size:14px;text-align:center;overflow:hidden;float:left;}
+.ej_aboutSingle_leftTips ul li img{margin-right:3px;width:21px;height:20px;}
+.ej_aboutSingle_leftC{width:1160px;margin:20px auto ;overflow:hidden;font-size:16px;line-height:2;}
+.ej_aboutSingle_leftC img{max-width:100%!important;display: block;margin:0 auto;}
+.ej_aboutSingle_page{border-top:1px solid #ccc;border-bottom:1px solid #ccc;text-align:center; height:40px; line-height:40px;}
+.ej_aboutSingle_page span{ display: block;  width: 50%;  float: left;}
+.ej_aboutSingle_tag{ line-height: 40px; text-align: left;padding-left: 20px;display: block;font-size: 1.17em; -webkit-margin-before: 1em;-webkit-margin-after: 1em;-webkit-margin-start: 0px; -webkit-margin-end: 0px; font-weight: bold;margin:0;}
+.ej_aboutSingle_tag a:visited{    text-decoration: none; color: #666;}   
+/*关乎我们单页右边开始*/
+.ej_aboutSingle_right{width:260px;float:right;}
+
+/*相关产品*/
+.related {margin-bottom:10px;height:230px;}
+.related li{    width: 553px;
+    margin-left: 20px;border-bottom:1px dotted #ccc;float:left;text-indent:10px;line-height:30px;height:30px;}
+.related li a:hover{color:#ed182a;}
+.ej_aboutSingle_page span a:hover{color:#ed182a;}
+.ej_aboutSingle_tag a:hover{color:#ed182a;}
+.related ul{width:1160px;margin:10px auto;height:auto;}
+.related h3{width:1160px;font-size:16px;margin:0 auto;background: url(../../../common/images/xg_line.jpg) no-repeat left bottom; line-height: 40px;    margin:0 auto;background-size:100% ;}
+.m_right {
+  width: 100%;
+  margin-top: 8px;
+}
+.m_right ul {
+  width:100%;
+  border:none;
+}
+.m_right ul li {
+  float: left;
+  width: 148px;
+  height: 278px;
+  margin-left: 18px;
+  padding-top: 7px;
+  padding-left: 8px;
+  border: 1px solid #dedede;
+  text-indent:0;
+  margin-bottom:18px;
+}
+.m_right p {
+  height: 35px;
+  line-height: 35px;
+}
+.m_right em {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  color: #ed182a;
+  padding-bottom: 7px;
+}
+.add-class{
+	clear: both;
+    font-size: 12px;
+    line-height: 21px;
+    width: 100%;
+}
+.add-class p{
+	border-bottom: 1px dotted #ccc;
+    margin-left: 40px;
+    line-height: 30px;
+    padding-left: 10px;
+    color: #666;
+}

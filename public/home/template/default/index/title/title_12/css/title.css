@@ -1,0 +1,6 @@
+/*第10套标题*/
+
+.title{width:1200px;margin:0 auto;line-height:60px;padding: 50px 0 30px;text-align: center;}
+.title h4{font-weight: normal;text-align: center;line-height:65px;font-size:30px;background:url("../images/title_bg.png") no-repeat center;color:#000;}
+.title a{color:#000;}
+.title i{font-size:18px;color:#000;}

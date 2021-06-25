@@ -1,0 +1,14 @@
+body{background:#e6e6e6;}
+.mt5{margin-top:5px;}
+/*关于我们二级*/
+.ej_upNav{height:40px;line-height:40px;font-size:12px;color:#666;}
+.ej_upNav a{color:#666;float:left;}
+.ej_upNav a:hover{color:#ed182a;}
+.ej_upNav img{width:14px;height:12px;float:left;margin-top:14px;margin-right:5px;}
+.ej_upNav span{float:left;margin:0 5px;}
+.gsjs_01{ color:#2C2C2C; font-size:22px;width:1160px;margin:20px auto 0 auto;}
+.gsjs_01 span{ color:#D7D7D7; font-size:20px;}
+.gsjs_xian{ border-bottom:1px solid #EBEBEB; margin-top:10px;}
+.gsjs_xian_01{ border-bottom:1px solid #f25618; margin-top:-1px; width:88px;}
+.gsjs_js{color:#6C6C6C; font-size:16px; margin-top:25px; line-height:25px; overflow:hidden;width:1160px;margin:20px auto 20px auto;}
+.gsjs_js img{max-width:100%;}

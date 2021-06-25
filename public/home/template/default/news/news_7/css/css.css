@@ -1,0 +1,8 @@
+*{margin: 0;padding: 0}
+body{ _font-family: 'Microsoft YaHei' !important; font-family: 'Microsoft YaHei'; margin:0 auto;width:100%;}
+em,i{ font-style:normal;}
+ul{ list-style:none;}
+img{ border:0 none;}
+a{ text-decoration:none; outline:none;}
+li,img,label,input {vertical-align: middle; }
+@font-face { font-family: DINOffcPro; src:url('../images/font/DINOffcPro.html'), url('../images/font/DINOffcPro-2.html'), url('../images/font/DINOffcPro-3.html'), url('../images/font/DINOffcPro-4.html'), url('../images/font/DINOffcPro-5.html'); }

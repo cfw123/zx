@@ -1,0 +1,15 @@
+/*第10套小区*/
+.tuanz_s10{width:1150px;padding:0 20px;margin:0 auto;background:#fff; margin-bottom:10px;}
+.tuanz_s10 .tuanz_s10_ul li{ width:369px; height:429px; float:left; border:1px solid #ccc; margin-right:20px; position:relative;}
+.tuanz_s10 .tuanz_s10_img{ width:369px; height:267px; overflow:hidden;}
+.tuanz_s10 .tuanz_s10_img img{width:369px; height:267px;}
+.tuanz_s10 .tuanz_s10_text{ font-size:20px; color:#000; margin:0 16px; margin-top:14px;height:28px;overflow:hidden;}
+.tuanz_s10 .tuanz_s10_text span{ color:#F49D00;}
+.tuanz_s10 .tuanz_s10_tr{ height:21px; color:#757575; font-size:16px;overflow:hidden; margin:0 16px; margin-top:7px;}
+.tuanz_s10 .tuanz_s10_trson{ float:left; margin-right:12px;}
+.tuanz_s10_ul{ width:1200px;}
+.tuanz_s10_bmct{ z-index:1; position:absolute; left:-5px; bottom:13px; background:url(../images/lj3_123456.png) no-repeat; height:64px; width:239px;}
+.tuanz_s10_te{ font-size:18px; color:#FFF; float:left; font-size:22px; margin-left:26px; line-height:54px;}
+.tuanz_s10_ck{ margin-top:17px; margin-left:20px; border-radius:4px; width:66px; height:24px; background:url(../images/lj_ck.jpg) repeat; float:left; color:#9F4F06; border:1px solid #F0B04F; text-align:center; line-height:24px; font-size:15px;}
+.tuanz_s10_kjs{ overflow:hidden; position:absolute; right:12px; bottom:14px; background:url(../images/lj_123456789.png) no-repeat; width:164px; height:63px;}
+.tuanz_s10_kjstx{ color:#797979; font-size:14px; line-height:54px; margin-left:43px; overflow:hidden; white-space:nowrap; text-overflow: ellipsis;}

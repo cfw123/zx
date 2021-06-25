@@ -1,0 +1,115 @@
+*{margin:0px;padding:0px;}
+body{background:#ECECEC;font-size:12px;font-family:"Microsoft YaHei";color:#333;}
+a{text-decoration:none;cursor:pointer;color:#333}
+
+li{list-style-type:none;}
+
+/*左边信息展示*/
+.left_content{width:920px;zoom:0;float: left;}
+
+/*页面导航*/
+.snav{height:30px;background: #fff;margin-top:18px;margin-bottom:16px;}
+.snav .text{line-height:30px;margin-left:13px;}
+
+
+/*工地信息展示*/
+.gd_box{height:253px;margin-top:14px;background-color:White;position:relative;}
+.gd_box .img{width:174px;height:130px;position:relative;float: left;left:18px;top:10px;padding: 2px;
+border: 1px solid #DDD;}
+.gd_box .img img{width:100%;height:100%;}
+.gd_box .img .img_icon{position:absolute;width:159px;height:44px;bottom:23px;left:-8px;background:url(../images/img_icon.png) no-repeat;color:#fff;font-size:18px;line-height:36px;padding-left:42px;}
+.gd_box .right{width:700px;float: left;}
+
+.gd_box .title{height:40px;line-height:45px;padding-left:20px;font-size:26px;background: #fff;}
+.gd_box .title .title_span{font-size:18px;}
+.gd_box .right .nr{height:193px;width:100%;overflow: hidden;position: relative;}
+
+.gd_box .right .nr table{margin-top:8px;float: left;}
+.gd_box .right .nr .table1{margin-left:68px;}
+.gd_box .right .nr .table2{margin-left:70px;}
+.gd_box .right .nr td{height:28px;text-align: left;font-size:14px;}
+.gd_box .right .nr td.left{color:#FD8E00;width:112px;}
+.gd_box .right .nr td.rig{width:99px;}
+/*.gd_box .right .nr .line{width:1px;height:117px;background:url(../images/sx.png) no-repeat;position: absolute;top:13px;}
+.gd_box .right .nr .line1{left:279px;}
+.gd_box .right .nr .line2{left:612px;}*/
+.gd_box .right .nr .icon{width:17px;height:17px;position: absolute;}
+.gd_box .right .nr .icon1{background:url(../images/nr_icon1.png) no-repeat;left:39px;top:17px;}
+.gd_box .right .nr .icon2{background:url(../images/nr_icon2.png) no-repeat;left:39px;top:43px;}
+.gd_box .right .nr .icon3{background:url(../images/nr_icon3.png) no-repeat;left:39px;top:73px;}
+.gd_box .right .nr .icon4{background:url(../images/nr_icon4.png) no-repeat;left:39px;top:105px;}
+.gd_box .right .nr .icon5{background:url(../images/nr_icon5.png) no-repeat;left:326px;top:17px;}
+.gd_box .right .nr .icon6{background:url(../images/nr_icon6.png) no-repeat;left:326px;top:43px;}
+.gd_box .right .nr .icon7{background:url(../images/nr_icon7.png) no-repeat;left:326px;top:73px;}
+.gd_box .right .nr .icon8{background:url(../images/nr_icon8.png) no-repeat;left:326px;top:105px;}
+.gd_box .right .nr .icon9{background:url(../images/nr_icon9.png) no-repeat;left:39px;top:132px;width:112px;color:#FD8E00;font-size:14px;padding-left:30px;}
+
+/*进度条*/
+.gd_box .jd{/*width:700px;*/height:45px;top: 197px;left: 20px;position: absolute;overflow:hidden;}
+.gd_box .jd .jd_text{width:80px;float:left;height:100%;background:url(../images/jd_bg.png) no-repeat top center;}
+.gd_box .jd .jd_text .jd_wz{width:90%;margin: 0 auto; text-align: center;line-height:25px;font-size:14px;height:35px;margin-top:14px;}
+.gd_box .jd .active{background:url(../images/jd_bg2.png) no-repeat top center;}
+
+/*施工详情*/
+.gd_show{margin-top:14px;background-color:White;padding:20px 0}
+.gd_show .gd_content{width:880px;margin: 0 auto;}
+.gd_show .gd_content img{max-width:100%;display: block;margin:10px auto;}
+.gd_show_sg{width:780px;margin-left:116px;border-left:5px solid rgb(177, 176, 176);}
+.gd_follow{border:1px solid #ccc;background-color:
+#FAFAFA;position:relative;margin-left:30px;margin-bottom:20px;min-height: 55px;}
+
+/*施工节点*/
+.gd_sgname{    font-size: 16px;
+    color: Orange;
+    position: absolute;
+    left: -133px;
+    top: 18px;
+    width: 81px;}
+
+/*圆圈*/
+.gd_yuanquan1{width:23px;height:23px;background-color:#CCC;border-radius:50%;position:absolute;left:-45px;top:18px}
+.gd_yuanquan2{width:10px;height:10px;background-color:#ed182a;border-radius:50%;margin-top:6.2px;margin-left:6.5px;}
+.gd_yuanquan3{width:10px;height:10px;background-color:#FFF;border-radius:50%;margin-top:6.2px;margin-left:6.5px;}
+
+.gd_jiantou{position: absolute;left: -16px;top: 20px;}
+
+.gd_show .sg_content{width:720px;margin:24px auto;}
+.gd_show .sg_content .sg_title{font-size:22px;color:Orange;}
+.gd_show .sg_content .sg_wz{font-size:14px;margin-top:5px;}
+.gd_show .sg_content .sg_wz img{max-width:100%;display: block;margin:0 auto;}
+.clear{clear:both;}
+
+
+/*图片展示*/
+.caseimg{ width:700px; margin:0 auto}
+.caseimg .small li{ max-width:118px;height:118px; float:left; overflow:hidden; margin:1px;}
+.caseimg .small img{cursor:url(../images/zoom.html),auto;}
+.caseimg .big img{ cursor:pointer;max-width:100%;}
+.caseimg .big li{text-align:center;margin: 10px auto;}
+
+
+/*右边信息展示*/
+.right_content{width:262px;zoom:0;float: right;margin-top:18px;}
+.right_yuyue{background-color:White;padding-bottom:15px;}
+.yuyue_advert{width:258px;height:116px;padding:2px}
+
+.yuyue_advert img{width:100%;height:116px;}
+
+/*右边表单*/
+.right_table{width:90%;margin:0 auto;margin-top:10px;}
+
+.right_table td{height:37px;}
+
+.right_table .td_title{font-size:15px;color:Orange;}
+
+.right_table .txt_input{height:25px;border:1px solid #DDD;background-color:rgb(255, 250, 190);margin-left:5px;width:141px}
+
+.right_table .btn_sub{background-color:White;border:1px solid rgb(255, 122, 0);color:rgb(255, 122, 0);padding:5px 45px;margin-top:10px;font-size:14px;}
+
+/*业主展示*/
+.show_yz{width:100%;background-color:White;margin-top:19px;overflow: auto;}
+.show_yz .yz_title {padding:10px;border-bottom:1px solid orange;}
+.show_yz .yz_title div{border-left:5px solid orange;font-size:16px;padding-left:10px;color:Orange;font-weight:bold;}
+.show_yz .yz_list{height:300px;overflow: hidden;margin:10px 0;}
+.show_yz .yz_list ul{width:240px;margin:10px auto;}
+.show_yz .yz_list ul li{border-bottom:1px dashed #BBB;font-size:16px;height:35px;overflow:hidden;width:100%;overflow: hidden;line-height:35px;}

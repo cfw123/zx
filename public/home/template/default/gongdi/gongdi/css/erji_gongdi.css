@@ -1,0 +1,54 @@
+body{background:#e6e6e6;}
+.mt5{margin-top:5px;}
+/*设计师案例二级*/
+/*.ej_des_upNav{height:40px;line-height:40px;font-size:12px;color:#666;}
+.ej_des_upNav a{color:#666;float:left;}
+.ej_des_upNav a:hover{color:#ed182a;}
+.ej_des_upNav img{width:14px;height:12px;float:left;margin-top:14px;margin-right:5px;}
+.ej_des_upNav span{float:left;margin:0 5px;}*/
+
+/*在线工地样式*/
+/*在线工地大图*/
+.ej_site_banner{background:#F09C4B;}/*顶部*/
+.ej_site_position{ padding-top:35px; line-height:40px; font-size:12px; border-bottom:1px solid #ffccb3;font-family:"Microsoft YaHei";}
+.ej_site_banner_conheight:324px;}
+.ej_site_banner_con h3{color:#fff;font-family:"Microsoft YaHei"; font-weight:lighter; font-size:30px; padding-top:30px;}
+.ej_site_banner_con h3 span{ font-size:52px; padding-right:10px;}
+.ej_site_banner_con p{color:#fff;font-family:"Microsoft YaHei"; font-size:24px; padding-top:10px;}
+.ej_site_banner_con a{ padding:40px 0 25px 0; display:block}
+
+.ej_site_search{height: 84px;width: 1198px;background: #F7F7F7;margin:10px auto 0px;border: 1px solid #ccc;}
+.ej_site_form{margin-top: 15px;margin-left: 20px;float: left;}
+
+.ej_site_form input{}
+.ej_site_form input[type='text']{float:left;width:337px; height:34px; line-height:34px; padding-left:10px; border:1px solid #ccc; color:#999}
+.ej_site_form input[type='submit']{float:left; width:36px; height:36px; margin-left:-2px; border:1px solid #ccc; border-left:0px; cursor:pointer; background:url(../images/static/search_button.png) center center no-repeat #FFF; margin-top:0; margin-bottom:0;}
+.ej_site_search a{float:right; margin:15px 90px 0 0; color:#FB8D00; line-height:35px; font-size:12px;}
+.ej_site_search p{margin:10px 0 10px 20px; line-height:20px; color:#FB8D00;}
+
+.ej_site_area{border-bottom:1px solid #ccc; line-height:38px; width:1198px; background:#fff;}
+.ej_site_area span{display:block; width:77px; line-height:38px; font-size:12px; text-align:center; background:#919191; border-right:1px solid #ccc; float:left;}
+.ej_site_area  a{float:left; margin-left:32px; color:#999;}
+.ej_site_current{font-weight:bold;color:#ed182a!important;}
+.ej_site_click{color:#000; font-weight:bold;}
+
+.ej_site_ct{width: 1170px;line-height: 25px; color: #333; margin:0px auto 20px;padding-left:30px; background: #fff;}
+.ej_site_ul li{margin-bottom:30px;padding-top:20px;padding-bottom:10px;}
+.ej_siteLileft{float:left;}
+.ej_siteLiright{float:left; margin-left:30px;}
+.ej_siteLiright h4{font-size:26px; color:#444; margin:0px 0px 21px;font-weight:400;}
+.ej_siteLiright h5{font-size:14px; font-weight:400; margin-top:1px; color:#868686;}
+.ej_siteLiright h5 a,.ej_siteLiright h5 span{float:left}
+.ej_siteLiright h5 span{margin-left:20px;margin-top:-4px; font-size:12px;  color:#000;}
+.ej_siteLiright h5 t{color:#666; font-size:12px;}
+.ej_siteButton{width:136px; float:right;margin-right:80px;}
+.ej_siteButton1{width:135px; height:38px; line-height:38px; display:block; text-align:center; background:#FB8D00; color:#FFF!important; margin-top:46px;}
+.ej_siteButton2{display:block; width:133px; height:36px; line-height:38px; border:1px solid #FB8D00; text-align:center; color:#FB8D00!important; margin-top:43px;}
+
+.ej_siteJindu{margin-top:25px;}
+.ej_site_jindu{display:block; width:110px; height:38px; line-height:38px; float:left; text-align:center; background:url(../images/static/icon-line-grey.png) repeat-x; color:#999;}
+.ej_site_jindu2{background:url(../images/static/icon-line.png) repeat-x; color:#FB8D00;}
+.ej_site_i{background:url(../images/static/circle1.png) center no-repeat; display:block; width:13px; height:13px; margin:-5px auto;}
+.ej_site_i2{background:url(../images/static/circle2.png) center no-repeat;}
+.ej_site_ul{padding-bottom:20px;}
+.ej_gongdi_zl a{float:none!important;}

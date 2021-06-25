@@ -1,0 +1,73 @@
+/* 点我 */
+.box{
+    width: 100%;
+    margin-top: 300px;
+    text-align: center;
+}
+.box h1{
+    padding-bottom: 20px;
+}
+.box .box_bg{
+    width: 200px;
+    height: 200px;
+    background: #B8B9B9;
+    border-radius: 20px;
+    border:10px solid #B8B9B9;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.box .box_bg img{
+    width: 100%;
+    height: auto;
+}
+/* 弹出 */
+.Eject{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    display: none;
+}
+.Eject_bg{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.Eject_lb{
+    width: 70%;
+    height: 60%;
+    /*background: #B8B9B9;*/
+    position: absolute;
+    top:20%;
+    left:15%;
+}
+.Eject_lb .bannerlb{
+    width: 100%;
+    height: 100%;
+}
+.Eject_lb .bannerlb .lb_bg{
+    height: 80%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Eject_lb .bannerlb img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.Eject_lb .bannerlb .Eject_text{
+    width: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+    height: 20%;
+    /*background: #fff;*/
+}
+.Eject_lb .bannerlb .Eject_text p{
+    padding: 20px 0;
+    color:#fff;
+    font-size:18px;
+}
+.swiper-pagination{font-size:18px;color:#fff;}
+.swiper-pagination span{font-size:18px;color:#fff;}

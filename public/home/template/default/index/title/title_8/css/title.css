@@ -1,0 +1,15 @@
+/*第8套标题*/
+
+
+.s8_title{ width:1200px; margin:0 auto; text-align:center !important;}
+.s8_title h2{ display: inline-block; _zoom: 1; border: solid 1px #e0e0e0;line-height: 48px; color: #000; padding: 0 27px;font-weight:normal;font-size: 26px;position:relative; margin-top:32px;}
+.s8_title h2.on{ color:#FFF;}
+.s8_title h2 span span { font-size: 14px;font-weight: normal;padding-left: 5px;}
+.s8_title h2 span span em{ color:#26a4d7;}
+.s8_title_left{width: 120px; height: 1px; border-top: solid 1px #e0e0e0; top: 50%;position: absolute !important; left: -100px;}
+.s8_title_right{width: 120px; height: 1px; border-top: solid 1px #e0e0e0;top: 50%; position: absolute !important;    right: -100px;}
+.s8_title_p{ padding: 10px 0; color:#5B6E7D; padding:10px 0 40px 0;}
+.s8_title_p.on{ color:#fff;}
+
+.white_baise .s8_title h2{ color:#FFF;}
+.white_baise .s8_title_p{ color:#FFF;}

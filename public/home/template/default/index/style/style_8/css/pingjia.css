@@ -1,0 +1,32 @@
+.pingjia{width:1200px;margin:0 auto;overflow: hidden;margin-bottom:10px;}
+.pingjia_left{width:745px;float:left;}
+.pingjia_left .pingjia{width:100%;}
+.pingjia_left .pingjia ul{width:100%;margin:0 auto;}
+ul.pingjia_ul li{width:100%;min-height:80px;border-top:1px dotted #ccc;overflow: hidden;}
+ul.pingjia_ul li p{margin-top:10px;margin-bottom:10px;margin-left:100px;line-height:25px;text-align:left;font-size:14px;height: 32px;overflow: hidden;}
+ul.pingjia_ul li p em{float:right;}
+ul.pingjia_ul li p strong{font-weight:normal;color:#000;}
+ul.pingjia_ul a{margin-top:5px;}
+
+.empstar,.fullstar{background:url(../../../../../../images/star.gif);display: inline-block;width: 13px;height: 13px;margin: 0 1px;}
+.empstar{background-position:right;}
+
+
+.pingjia_right{width:368px;height:372px;float:right;}
+.pingjia_nav{width:348px; height:100px; margin:0px auto; margin-top:10px; font-size:12px;}
+.pingjia_nav dl{width:348px; height:25px; line-height:25px; text-align:left; text-indent:30px; overflow:hidden;}
+.pingjia_nav dt{width:318px; height:40px; line-height:20px; text-align:left; padding-left:30px;}
+.pingjia_dlimg{background:url(../../style_7/images/pj1.png) no-repeat;}
+.pingjia_dlimg1{background:url(../../style_7/images/pj2.png) no-repeat;}
+.pingjia_dlimg2{background:url(../../style_7/images/pj3.png) no-repeat;}
+.xx{width:410px; height:12px;}
+.pingjia_tj{display:block;width:372px; height:50px; background:url(../../style_7/images/tw.png); background-position:-1px -1px; margin:0px auto;margin-top: 10px; }
+.pingjia_online{height:34px; margin:0px auto; margin-top:15px;}
+.pingjia_online1,.pingjia_online2{width:164px; height:36px; background:url(../../style_7/images/zx.png) no-repeat; float:left;}
+.pingjia_online2{background:url(../../style_7/images/qqzx.png) no-repeat; float:right}
+em, i {
+    font-style: normal;
+}
+.pingjia_biaoti{font-size:28px;font-weight:bold;margin-bottom:30px;}
+.pingjia_biaoti span{border-left:3px solid #F3BC23;height:26px;font-size:18px;line-height:35px;color:#B7B7B7;margin-left:13px;padding-left:10px;    font-weight: 100;display: inline-block;vertical-align: middle;}
+.pingjia_more{background:#ccc;height:30px;line-height:30px;text-align: center;color:#fff!important;display: block;font-size:16px;}

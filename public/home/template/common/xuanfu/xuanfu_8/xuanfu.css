@@ -1,0 +1,82 @@
+﻿.baseQuote {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 98;
+  width: 100%;
+  height: 99px;
+  color: #fff;
+  background: rgba(9, 50, 155, 0.85);
+  transition: all 0.3s ease-in-out;
+}
+.baseQuote .baseQuoteCon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 1500px;
+  margin: 0 auto;
+	justify-content: space-between;
+	height: 99px;
+}
+.baseQuote .baseQuoteCon > .closeImg {
+  position: absolute;
+  top: 10px;
+  right: -29px;
+  width: 17px;
+  cursor: pointer;
+}
+.baseQuote .baseQuoteCon > .houseImg {
+  /*position: absolute;*/
+  /*top: 50%;*/
+  /*transform: translateY(-50%);*/
+  /*left: 0;*/
+  width: 245px;
+  /*max-height: 131px;*/
+  height:auto;
+  padding: 0;
+  margin-right:24px;
+}
+.baseQuote .baseQuoteCon > .hint {
+  width: 195px;
+  line-height: 1;
+}
+.baseQuote .baseQuoteCon > .hint > p:nth-child(1) {
+  font-size: 24px;
+}
+.baseQuote .baseQuoteCon > .hint > p:nth-child(2) {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.baseQuote .baseQuoteCon > .price {
+  width: 188px;
+  font-size: 25px;
+  text-align: center;
+}
+.baseQuote .baseQuoteCon select,.baseQuote .baseQuoteCon  input{
+	width:162px;
+	height:52px;
+	background: #fff;
+	border:none;
+	outline:none;
+	border-radius:8px;
+	text-align: center;
+	font-size:21px;
+	font-weight:1000;
+	text-align-last: center;
+	color:rgba(117, 117, 117,0.6);
+}
+.baseQuote .baseQuoteCon  input::placeholder{
+	color:rgba(117, 117, 117,0.6);
+}
+.baseQuote .baseQuoteCon .submit1 a{
+	width:147px;
+	height:55px;
+	display: flex;
+  align-items: center;
+	justify-content: center;
+	background-color: #F37474;
+	border-radius:8px;
+	color:#fff;
+	font-weight:1000;
+	font-size:21px;
+}

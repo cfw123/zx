@@ -1,0 +1,47 @@
+﻿body{background-color:#e5e5e5;}
+/*顶部区域导航*/
+.ej_case_nav{height:auto;margin-top:10px;background:#fff;}
+.ej_case_nav ul{width:100%;}
+.ej_case_nav ul li{border-bottom:1px solid #eee;line-height:40px;}
+.ej_case_nav ul li p.ej_itemName{width:105px;height:40px;float:left;text-align:right;font-weight:bold;color:#333;}
+.ej_case_nav ul li p.ej_info{overflow:hidden;line-height:40px;/*float:left;*/padding-left:17px;}
+.ej_case_nav ul li p.ej_info a{padding: 3px 8px;margin-right: 17px;color: #666666;text-decoration: none;border-radius: 3px;display: inline-block;line-height: 18px;}
+.ej_case_nav ul li p.ej_info a:hover{background:#ed182a!important;color:#fff!important;}
+.ej_case_nav ul li p.ej_info a.ej_active{background:#ed182a!important;color:#fff!important;}
+
+/*楼盘导航*/
+.ej_case_lpNav{padding:6px 0px 10px;background:#fff;line-height:40px;margin-top:10px;}
+.ej_case_lpNav p.ej_itemName{width:70px;height:40px;float:left;text-align:right;font-weight:bold;color:#333;margin-left:34px;}
+.ej_case_lpNav p.ej_info{overflow:hidden;line-height:40px;/*float:left;*/padding-left:17px;}
+.ej_case_lpNav p.ej_info a{padding: 3px 8px;margin-right: 17px;color: #666666;text-decoration: none;border-radius: 3px;}
+.ej_case_lpNav p.ej_info a:hover{background:#ed182a!important;color:#fff!important;}
+a.ej_active{background:#ed182a!important;color:#fff!important;}
+
+/*图片排序导航*/
+.ej_pic_sort{margin:10px auto; font-size:13px;height:26px;}
+.ej_pic_sort a{width:80px;border:1px solid #ccc;background:#fff;line-height:26px; text-align:center; color:#000 ; float:left; margin:0 5px;} 
+.ej_pic_sort a div:hover{background:#ed182a !important; color:#FFF !important; cursor:pointer}
+.ej_pic_sort a img{vertical-align:middle;}
+
+.ej_case_menu{width:1200px;text-align:center;overflow:hidden;}
+.ej_case_menu ul{width:1240px;}
+.ej_case_menu ul li{ width: 385px;float: left;padding: 3px;margin-bottom: 10px;background: #fff;margin-right: 13px;}
+.ej_case_menu li img{ width:385px;}
+.ej_case_menu .menu div.menulist{ width:96%; margin:0 auto; font-size:12px; border-bottom:1px dashed #dcdcdc; padding:10px 0; overflow:hidden}
+.ej_case_menu .menu div b{ color:#38b801; display:inline-block; width:44px; text-align:center; font-size:13px; padding-top:30px; float:left; background-image:url(../../../../../images/finework-isearch.html);}
+.ej_case_menu .menu div b.zoom{ background-position:7px -15px}
+.ej_case_menu .menu div b.price{ background-position:-166px -15px}
+.ej_case_menu .menu div b.style{ background-position:-105px -15px}
+.ej_case_menu .menu div b.local{ background-position:-235px -15px}
+.ej_case_menu .menu a{white-space:nowrap; color:#7f7f7f}
+.ej_case_menu .menu a:hover{color:#f60}
+.ej_case_menu .menu div.menulist div{ display:block; float:right; width:180px; line-height:22px; padding:2px 0; text-align:left}
+.ej_case_menu .menu h3{ line-height:30px; background-color:#38b801; font-size:14px; padding:0 10px; text-align:left; color:#fff; margin-bottom:10px;}
+.ej_case_menu .menu b{ display:inline-block; float:left; width:65px;}
+.ej_case_menu div{ position:relative}
+.ej_case_menu ul li a.altxt{display:block;width:100%;height:40px;line-height:40px;text-align:left;font-size:14px;color:#666;overflow: hidden;}
+.ej_case_menu ul li a.altxt:hover{color:#ed182a;}
+.ej_case_menu ul li p{width:100%;height:40px;line-height:40px;background:#f7f7f7;text-align:left;}
+.ej_case_menu ul li p img{width:30px;margin:5px 3px;;float:left;}
+.ej_case_menu ul li p span{display:block;color:#ed182a;float:right;}
+.ej_case_menu ul li p span a{color:#50bde8;font-weight:bold;vertical-align: bottom;}

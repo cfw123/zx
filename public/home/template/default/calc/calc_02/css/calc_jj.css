@@ -1,0 +1,505 @@
+﻿.jisuanqi_main_index{width:100%;height: 800px;background:url(../images/calc_bg.jpg)center center /cover no-repeat;}
+.jisuanqi_main_index .calc_jj02{display:block; width:100%; height:100%; z-index:999; background:#000; opacity:.75; top:0; left:0; z-index: 8000;}
+/*.jisuanqi_main_index .calc_jj02.on{display: none;}*/
+.jisuanqi_main_index .ielt9 .calc_jj02{filter:alpha(opacity=75);}
+.jisuanqi_main_index .ielt7 .calc_jj02{width:100%;height:100%;top:0;position:absolute;top:0;z-index:8000;}
+#baojia{
+    border: none;
+   /* background-color: rgb(214,201,15);*/
+    /*padding: 15px 20px;*/
+    font-size: 18px;
+    color: #214277;
+    /*border-radius: 30px;*/
+    outline: none;
+    cursor: pointer;
+    position: fixed;
+    left: 20px;
+    bottom: 40px;
+}
+.jisuanqi_main_index .calc_jj01{
+	position: relative;
+    width: 980px;
+    height: auto;
+    margin:0 auto;
+    box-shadow: 1px 1px 10px #999;
+    top: 25%;
+}
+.jisuanqi_main_index .calc_jj01.on{
+	display: none;
+}
+.jisuanqi_main_index .calc_jj01 .calc_jj01_title {
+    height: 40px;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.calc_jj01_close{
+    cursor:pointer;
+}
+.jisuanqi_main_index .calc_jj01 .calc_jj01_title span {
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    font-size: 16px;
+    color: #666;
+    margin: 18px 0 0 20px;
+}
+.jisuanqi_main_index .calc_jj01 .calc_jj01_title em {
+    display: inline-block;
+    height: 14px;
+    height: 14px;
+    margin: 22px 0 0 6px;
+    color: #f36f20;
+}
+.jisuanqi_main_index .calc_jj01 .calc_jj01_title a {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 16px;
+    line-height: 16px;
+}
+.jisuanqi_main_index .calc_jj01 .calc_jj01_title a img{
+	width:100%;
+}
+.jisuanqi_main_index .calc_jj01 .calc_jj01_container {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.jisuanqi_main_index .clear{*zoom:1;}
+.jisuanqi_main_index .clear:after{display:block;clear:both;content:"\0020";visibility:hidden;height:0;}
+.jisuanqi_main_index .tender-pop-main {
+    height: 456px;
+    overflow: hidden;
+}
+.jisuanqi_main_index .tender-pop-con {
+    display: none;
+}
+.jisuanqi_main_index .tender-pop-left {
+    float: left;
+    width: 490px;
+    border-right: 1px solid #ddd;
+    height: 456px;
+}
+.jisuanqi_main_index .tender-pop .tender-pop-title {
+    padding-top: 60px;
+    font-size: 28px;
+    text-align: center;
+    color: #333;
+    line-height: 36px;
+}
+.jisuanqi_main_index .tender-pop-applypeople {
+    width: 198px;
+    margin: 10px auto 0;
+    color: #666;
+    font-size: 12px;
+}
+.jisuanqi_main_index .num-man {
+    color: #fe5f00;
+    width: 20px;
+}
+.jisuanqi_main_index .tender-form-list {
+    padding: 10px 40px;
+}
+.jisuanqi_main_index .tender-form-list .tender-form-item {
+    text-align: left;
+}
+.jisuanqi_main_index .tender-form-item {
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    position: relative;
+    color: #666;
+    margin-bottom: 17px;
+}
+.jisuanqi_main_index .tender-form-item .worn-font {
+    color: #fe5f00;
+    position: relative;
+    top: 5px;
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.jisuanqi_main_index .tender-form-select.province {
+    width: 111px;
+}
+.jisuanqi_main_index .tender-form-select {
+    width: 232px;
+    height: 34px;
+    padding-left: 6px;
+    font-size: 14px;
+    color: #666;
+    border: 1px solid #dddddd;
+    vertical-align: middle;
+    padding-bottom: 8px \0;
+}
+.jisuanqi_main_index .tender-form-select.city {
+    /*margin-left: 10px;*/
+}
+.jisuanqi_main_index .tender-form-select.province {
+    width: 116px;
+}
+.jisuanqi_main_index .tender-form-font {
+    position: absolute;
+    left: 98px;
+    top: 2px;
+    color: #999;
+}
+.jisuanqi_main_index .tender-form-sup {
+    position: absolute;
+    right: 100px;
+    color: #333;
+}
+.jisuanqi_main_index .tender-huxing {
+    height: 45px;
+}
+.jisuanqi_main_index .tender-huxing div {
+    width: 240px;
+    float: right;
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    left: 86px;
+}
+.jisuanqi_main_index .tender-huxing .select_s_s {
+    width: 74px;
+    margin-bottom: 10px;
+}
+.jisuanqi_main_index .tender-huxing .select_s {
+    border: none;
+    margin-right: 0;
+    margin-left: 0;
+    border: 1px solid rgb(221, 221, 221);
+    width: 111px;
+    outline: none;
+}
+.jisuanqi_main_index .tender-huxing .select {
+    width: 255px;
+    padding-left: 5px;
+    height: 38px;
+    border-color: rgb(221, 221, 221);
+}
+.jisuanqi_main_index .col_l {
+    float: left;
+}
+.jisuanqi_main_index .tender-huxing .select-margin {
+    margin-left: 5px;
+}
+.jisuanqi_main_index .tender-huxing .select-long-margin {
+    margin-left: 10px;
+}
+.jisuanqi_main_index .pop-label {
+    float: left;
+    width: 81px;
+    padding-right: 5px;
+    line-height: 34px;
+    color: #333;
+    text-align: left;
+    margin-left: 0;
+    font-size: 14px;
+}
+.jisuanqi_main_index .pop-text-wrap {
+    position: relative;
+}
+.jisuanqi_main_index input.tender-form-input {
+    width: 219px;
+    padding: 8px 9px 7px;
+    border: 1px solid #dddddd;
+    vertical-align: middle;
+    left: 98px;
+    outline:none;
+}
+.jisuanqi_main_index .pop-element .pop-choosebjway, .pop-element .pop-suspend-wechat {
+    display: none;
+}
+.jisuanqi_main_index .pop-suspend-wechat {
+    display: none;
+    position: absolute;
+    width: 370px;
+    height: 223px;
+    bottom: 70px;
+    right: 43px;
+    background: url(../../../../common/xuanfu/xuanfu_6/images/zxbj_wxxh.png) no-repeat -450px -572px;
+}
+.jisuanqi_main_index .pop-sus-head {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 21px;
+}
+.jisuanqi_main_index .pop-sus-headimg {
+    float: left;
+    width: 170px;
+    height: 134px;
+    margin-left: 21px;
+    margin-top: 22px;
+}
+.jisuanqi_main_index .pop-headdetail {
+    position: relative;
+    z-index: 1;
+    width: 91px;
+    height: 90px;
+    margin: 0 auto;
+    background: url(../../../../common/xuanfu/xuanfu_6/images/zxbj_wxxh.png) no-repeat -447px -805px;
+}
+.jisuanqi_main_index .pop-worddetail {
+    position: relative;
+    z-index: 2;
+    height: 29px;
+    width: 140px;
+    margin: 0 auto;
+    margin-top: -11px;
+    background: url(../../../../common/xuanfu/xuanfu_6/images/zxbj_wxxh.png) no-repeat -573px -835px;
+}
+.jisuanqi_main_index .pop-worddetail p {
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    line-height: 25px;
+}
+.jisuanqi_main_index .pop-sus-headimg p {
+    color: #5ABCFD;
+    text-align: center;
+    font-size: 12px;
+}
+.jisuanqi_main_index .pop-suspend-wechat p {
+    height: 19px;
+    line-height: 19px;
+}
+.jisuanqi_main_index .pre-pop-fruit-show-arrow {
+    position: absolute;
+    background: url(../../../../common/xuanfu/xuanfu_6/images/zxbj_wxxh.png) no-repeat -23px -175px;
+    width: 23px;
+    height: 14px;
+    top: 100px;
+    left: 190px;
+}
+.jisuanqi_main_index .pop-sus-quocode {
+    float: right;
+    width: 105px;
+    height: 131px;
+    font-size: 12px;
+    text-align: center;
+    margin-right: 46px;
+    margin-top: 17px;
+}
+.jisuanqi_main_index .pop-sus-quocode div {
+    height: 100px;
+    margin-bottom: 5px;
+    border: 1px solid #eee;
+    background: url(../../../../common/xuanfu/xuanfu_6/images/zxbj_wxxh.png) no-repeat -821px -283px;
+}
+.jisuanqi_main_index .pop-suspend-wechat p {
+    height: 19px;
+    line-height: 19px;
+}
+.jisuanqi_main_index .tender-pop-buttom, .tender-form-footer {
+    text-align: center;
+}
+.jisuanqi_main_index .tender-form-footer {
+    width: 232px;
+    margin: 0 auto 13px;
+    font-size: 12px;
+    color: #999;
+}
+.jisuanqi_main_index .tender-form-explain {
+    color: #fe5f00;
+}
+.jisuanqi_main_index .submit-box {
+    position: absolute;
+    top: 162px;
+    left: 420px;
+    width: 140px;
+    height: 140px;
+    background: url(../../../../common/xuanfu/xuanfu_6/images/ico-line-btn.png) no-repeat center;
+    z-index: 9;
+    overflow: hidden;
+}
+.jisuanqi_main_index .tender-calc-btn, .tender-calc-btn.again {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 90px;
+    height: 90px;
+    z-index: 15;
+    background: #ff6d15;
+    background-position: 0 0;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 45px;
+}
+.jisuanqi_main_index .tender-pop-buttom, .tender-form-footer {
+    text-align: center;
+}
+.jisuanqi_main_index .tender-pop-buttom {
+    width: 120px;
+    height: 36px;
+    background-color: #ff6000;
+    display: block;
+    margin: 0 auto;
+    color: white;
+    cursor: pointer;
+}
+.jisuanqi_main_index .tender-recalc {
+    position: absolute;
+    top: 20px;
+    left: 23px;
+    font-size: 16px;
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    /* line-height: 90px; */
+    text-align: center;
+    cursor: pointer;
+}
+.jisuanqi_main_index .old-circle-animate {
+    position: absolute;
+    top: 14px;
+    right: 15px;
+    width: 110px;
+    height: 110px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #fdcc9a;
+    z-index: 12;
+    -webkit-animation: scale-three2 1.5s ease infinite;
+    -moz-animation: scale-three2 1.5s ease infinite;
+    -o-animation: scale-three2 1.5s ease infinite;
+    animation: scale-three2 1.5s ease infinite;
+    animation-fill-mode: both;
+}
+@keyframes scale-three2{
+	0%{
+		transform:scale(1);
+		background-color:#fdcd9b;
+	}
+	100%{
+		transform:scale(1.2);
+		background-color:#fff;
+	}
+}
+.jisuanqi_main_index .tender-pop-right {
+    float: right;
+    width: 470px;
+    height: 456px;
+}
+.jisuanqi_main_index .tender-pop-right .littlefont {
+    padding-top: 50px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.jisuanqi_main_index .tender-pop .tender-pop-title {
+    padding-top: 60px;
+    font-size: 28px;
+    text-align: center;
+    color: #333;
+    line-height: 36px;
+}
+.jisuanqi_main_index .tender-pop-title.littlefont .tender-title-text {
+    font-size: 14px;
+    color: #333;
+    font-weight: normal;
+}
+.jisuanqi_main_index .tender-price-result-box {
+    padding: 15px 40px 0;
+}
+.jisuanqi_main_index .tender-price-result {
+    width: 300px;
+    margin: 0 auto;
+    padding: 40px 0;
+    border: 1px solid #ddd;
+}
+.jisuanqi_main_index .tender-price-result li {
+    height: 40px;
+}
+.jisuanqi_main_index .tender-price-result li span {
+    float: left;
+    width: 48%;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+}
+.jisuanqi_main_index .tender-price-result li strong {
+    float: right;
+    width: 52%;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 0;
+    font-weight: normal;
+    font-size: 12px;
+}
+.jisuanqi_main_index .hotad-cl em, .hotad-rg em, .hotad-sj em, .hotad-zj em {
+    display: inline-block;
+    width: 55px;
+    font-style: normal;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+    font-weight: 400;
+    text-align: center;
+    font-size: 18px;
+    color: #f36f20;
+}
+.jisuanqi_main_index .tender-price-ad {
+    margin: 40px 67px 0;
+}
+.jisuanqi_main_index .tender-price-ad p {
+    width: 310px;
+    margin: 0 auto;
+    color: #999;
+    font-size: 12px;
+}
+.jisuanqi_main_index .tender-calc-btn, .tender-calc-btn.again {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 90px;
+    height: 90px;
+    z-index: 15;
+    background: #ff6d15;
+    background-position: 0 0;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 45px;
+}
+.jisuanqi_main_index .tender-huxing .select_s {
+    border: none;
+    margin-right: 0;
+    margin-left: 0;
+    border: 1px solid rgb(221, 221, 221);
+    width: 115px;
+    outline: none;
+    margin-right:9px;
+}
+.jisuanqi_main_index .tender-huxing .select_s:last-child{
+	margin-right:0;
+}
+.jisuanqi_main_index .tender-huxing .select_s_s {
+    width: 74px;
+    margin-bottom: 10px;
+    margin-right:9px;
+}
+.jisuanqi_main_index .tender-huxing .select_s_s:nth-child(3){
+	margin-right:0;
+}
+.jisuanqi_main_index .tender-title-count {
+    color: #fe5f00;
+    width:100px;
+    text-align: center;
+    display: inline-block;
+}
+.jisuanqi_main_index .pop-label-start {
+    float: right;
+    font-size: 24px;
+    color: #fe5f00;
+    margin-top: 5px;
+}
+.jisuanqi_main_index #pricePhone{
+	width:219px;
+	height:20px;
+}

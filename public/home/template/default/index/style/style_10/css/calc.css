@@ -1,0 +1,29 @@
+/*µÚ10Ì×¼ÆËãÆ÷*/
+.calc{ width:1200px; height:240px; overflow:hidden; padding-left: 93px;}
+.calc-lt{ width:302px; height:100%; overflow:hidden; color:#fff; background:url(../../style_7/images/rmb.png) no-repeat center 38px #FF2836; margin-left:19px;}
+.calc-lt p{ width:100%; height:30px; padding-top:134px; overflow:hidden; display:block; text-align:center; line-height:30px; font-size:20px;}
+.calc-lt span{ width:100%; height:21px; overflow:hidden; display:block; text-align:center; line-height:21px; font-size:13px;}
+.calc-ct{ border-bottom:1px solid #FF2836; border-top:1px solid #FF2836; height:238px;;width:555px; padding-left:27px;}
+.calc-title{ width:100%; height:36px; overflow:hidden; line-height:36px; padding-top:21px; font-size:18px; color:#222222;}
+.calc-lx{ width:100%; height:40px; overflow:hidden;}
+.calc-lx span{ width:60px; height:40px; overflow:hidden; display:block; line-height:40px; font-size:12px; color:#666666;}
+.calc-lx input{ display:block; margin-top:13px;}
+
+.calc-lxt{ width:100%; height:30px; overflow:hidden; margin-bottom:9px;}
+.calc-lxt span{ width:60px; height:30px; overflow:hidden; display:block; line-height:30px; font-size:12px; color:#000;}
+.calc-lxt input{ display:block; margin-top:8px;}
+.calc-lxt label{ height:30px; overflow:hidden; display:block; font-size:12px; line-height:30px; padding-left:4px; margin-right:16px; color:#000;float:left;}
+.calc-tx{ width:100%; height:32px;margin-bottom:10px;}
+.calc-tx label{ width:60px; height:32px; overflow:hidden; display:block; line-height:32px; font-size:12px; color:#000;cursor:pointer;}
+.calc-tx input{ width:123px; height:30px; border:1px solid #B9B9B9; margin-right:5px; line-height:30px; text-indent:5px; color:#666;}
+.calc-rt { margin-right:21px; width:274px;height:178px; overflow:hidden; padding-top:60px;float: right; border:1px solid #FFA800;}
+.calc-rt input{ width:234px; height:115px; overflow:hidden; display:block; color:#fff; border-radius:4px; font-size:24px; background:#FFA800; cursor:pointer;font-family: "Microsoft YaHei"; margin:0 auto;}
+.calc-rt input.act{ background:#f3c750;}
+.calc-rt p{ text-align:center; height:43px; overflow:hidden; line-height:43px; font-size:17px; color:#666666;}
+.calc-rt p span{width:45px;text-align:center;color:#FFA800;display: inline-block;}
+.calc_yzm{width:71px!important;height:24px!important;text-align: center;line-height:24px!important;color:#F4B91D;border: 1px solid #F4B91D;color:#F4B91D!important;margin-right:3px;margin-left:2px;border-radius:5px;margin-top: 3px;}
+
+
+
+
+

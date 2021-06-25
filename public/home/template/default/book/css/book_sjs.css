@@ -1,0 +1,12 @@
+body{font-size:14px; color:#555555;background: #fff;}
+html, body, form {overflow:hidden;    }
+.input{ width:224px; height:36px; line-height:24px; border:0px; padding:0px 0px 0px 6px; border:1px solid  #d2d2d2; background-color:#f7f7f7;}
+.tc_bz{ line-height: 24px; padding-left: 155px;}  
+.tc_bz span{ color:#ff7200;}
+.tc_bm{     width: 280px;
+    margin-left: 100px;
+    margin-top: 40px;}
+.tc_fy{ width:233px; float:left;  font-family:"微软雅黑"; text-align:center; margin-top:60px; margin-left:40px;}
+.tc_fy span{ font-size:18px; color:#ff7200;}
+.yuyue_qx a{ color:#555; display:block; float:right; padding-left: 20px; padding-right: 58px; padding-top: 12px; }
+#code{margin-top:10px;width:60px;height:20px;line-height:20px;}

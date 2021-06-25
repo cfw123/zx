@@ -1,0 +1,17 @@
+/* CSS Document */
+.ej_khzx_upNav{height:40px;line-height:40px;font-size:12px;color:#666;}
+.ej_khzx_upNav a{color:#666;float:left;}
+.ej_khzx_upNav a:hover{color:#ed182a;}
+.ej_khzx_upNav img{width:14px;height:12px;float:left;margin-top:14px;margin-right:5px;}
+.ej_khzx_upNav span{float:left;margin:0 5px;}
+.erji_khzx .khzx {padding-bottom: 15px;}
+.erji_khzx{min-height:600px;background:#fff;border:1px solid #ccc;margin:0 auto;}
+.erji_khzx .qtop{width:100%;min-height:100px;}
+h2{line-height:40px;padding-left:10px;background:#eeeeee;border-bottom:1px solid #ccc;border-top: 1px solid #ccc;}
+.erji_khzx .kehu,.wenti,.huida{background:url(../images/static/bj.html) no-repeat left center;}
+.erji_khzx .kehu{width:1000px;margin:10px auto 0px;line-height:30px;padding-left:30px;background:url(../images/static/kh.png) no-repeat left 5px;}
+.erji_khzx .wenti{width:1000px;margin:0px auto;line-height:30px;padding-left:30px;background:url(../images/static/wt.png) no-repeat left 5px;}
+.erji_khzx .huida{width:1000px;margin:0px auto 10px;line-height:30px;padding-left:30px;background:url(../images/static/hf.png) no-repeat left 3px;}
+.erji_khzx .form_big{width:800px;margin:50px auto 10px;}}
+.erji_khzx .border2 {border-top: 1px solid #dedede;}
+.erji_khzx .border1-1 { border-bottom: 1px dashed #dedede;}

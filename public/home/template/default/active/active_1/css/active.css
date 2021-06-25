@@ -1,0 +1,31 @@
+body{background-color:#e5e5e5;}
+.mt20{margin-top:20px;}
+/*顶部导航样式开始*/
+.ej_upNav{height:40px;line-height:40px;font-size:12px;color:#666;}
+.ej_upNav a{color:#666;float:left;}
+.ej_upNav a:hover{color:#ed182a;}
+.ej_upNav img{width:14px;height:12px;float:left;margin-top:14px;margin-right:5px;}
+.ej_upNav span{float:left;margin:0 5px;}
+
+/*线上活动样式*/
+.erji_active{width:100%;}
+.erji_active .active_fdh{width:1200px;margin:0 auto;}
+.erji_active .active_fdh a{font-size:14px;padding:0 10px;line-height:40px;color:#000;}
+
+.erji_active .active_content{width:1200px;margin:0 auto;}
+.erji_active .active_content>table tr td{width:50%;}
+.erji_active .active_content .active_img{width:100%;padding:15px;}
+.erji_active .active_content .active_img img{width:535px;height:390px;}
+
+.erji_active .active_content .active_txt{width:98%;height:400px;}
+.erji_active .active_content .active_txt>a{display:block;text-align: left;line-height:40px;color:#000;}
+.erji_active .active_content .active_txt>a:nth-child(1){margin-top:20px;font-size:24px;color:#666;}
+.erji_active .active_content .active_txt>a:nth-child(2){color:#fff;background-color:rgb(38,198,218);border-radius:10px;width:40%;text-align:center;margin-top:10px;}
+
+.erji_active .active_content .active_txt>p{border:1px dashed #d6d6d6;border-radius:3px;color:#666;line-height:50px;margin-top:85px;background:url(../images/li-spot.png) no-repeat left 5px top 18px;padding-left:30px;background-size:14px; }
+.erji_active .active_content .active_txt .active_btn{width:100%;margin-top:85px;}
+.erji_active .active_content .active_txt .active_btn table tr td{width:50%;}
+.erji_active .active_content .active_txt .active_btn a{font-size:19px;display:block;text-align:center;line-height:45px;color:#fff;padding:0 70px;}
+.erji_active .active_content .active_txt .active_btn td:nth-child(1) a{background-color:#f58217;}
+.erji_active .active_content .active_txt .active_btn td:nth-child(2) a{background-color:#ffcd00;}
+.erji_active .active_content .active_txt .active_btn a img{width:28px;padding:0 10px;position:relative;top:9px;}
