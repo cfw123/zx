@@ -2,9 +2,12 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Model;
 
-class Designer extends Model
+class Designer extends Base
 {
     //
+    public function photo()
+    {
+        return $this->hasOne('App\Models\Photo');
+    }
 }

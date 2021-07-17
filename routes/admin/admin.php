@@ -33,5 +33,14 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['che
     // 轮播图
    Route::resource('/nav','NavController', ['as' => 'admin']);
 
+   // 设计师 工长
+   Route::resource('/designer','DesignerController', ['as' => 'admin']);
+
+
+    // 案例管理
+    Route::resource('/case','CaseController', ['as' => 'admin']);
+
 
 });
+
+Route::post('service/upload/{type}', 'Service\UploadController@uploadFile')->name('service.upload');

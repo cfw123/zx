@@ -13,6 +13,7 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         //
-        '/req'
+        '/req',
+        '/service/upload/images',
     ];
 }

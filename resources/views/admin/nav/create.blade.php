@@ -59,7 +59,6 @@
     <script type="text/javascript" src="/admin/lib/jquery.validation/1.14.0/messages_zh.js"></script>
 
     <script type="text/javascript" src="/admin/lib/webuploader/0.1.5/webuploader.min.js"></script>
-    <script type="text/javascript" src="/admin/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
     <script>
         $('.skin-minimal input').iCheck({
             checkboxClass: 'icheckbox-blue',

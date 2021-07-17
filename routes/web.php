@@ -12,6 +12,8 @@
 */
 //
 Route::get('test/{id?}', function ($id) {
+
+    dump(\App\Tool\stage\CaseStage::STAGE_FINISH);
     return $id;
 });
 

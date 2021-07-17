@@ -2,15 +2,29 @@
 
 namespace App\Models;
 
+//class M3Result {
+//
+//    public $status;
+//    public $message;
+//
+//    public function toJson()
+//    {
+//        return json_encode($this, JSON_UNESCAPED_UNICODE);
+//    }
+//
+//}
+
 trait M3Result {
 
-  public $code;
-  public $message;
-  public $data;
+//    public $data = [];
+    public $status;
+    public $msg;
 
-  public function ResponseJson($code=0,$message='success',$data=[])
-  {
-    return json_encode([$code,$message,$data]);
-  }
+    public function toJson()
+    {
+        return json_encode($this, JSON_UNESCAPED_UNICODE);
+//        return json_encode($this->toArray(), JSON_UNESCAPED_UNICODE);
+//        return response()->json($this)->setEncodingOptions(JSON_UNESCAPED_UNICODE);
+    }
 
 }
