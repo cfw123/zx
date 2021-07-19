@@ -7,6 +7,7 @@ use App\Models\Designer;
 use App\Models\M3Result;
 use App\Models\Photo;
 use App\Tool\stage\CaseStage;
+use Auth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -58,99 +59,242 @@ class CaseController extends Controller
     {
 
 
-        $case_name   = $request->input('case_name', '');
-        $designer_id = $request->input('designer_id', '');
-        $worker_id   = $request->input('worker_id', '');
-        $case_style  = $request->input('case_style', '');
-        $case_area   = $request->input('case_area', '');
-        $case_site   = $request->input('case_site', '');
-        $is_rem      = $request->input('is_rem', '');
-        $is_hidden   = $request->input('is_hidden', '');
+
+        if ($request->query('type') == 'createcase') {
 
 
-        $case = new Cases;
+            $case_name   = $request->input('case_name', '');
+            $designer_id = $request->input('designer_id', '');
+            $worker_id   = $request->input('worker_id', '');
+            $case_style  = $request->input('case_style', '');
+            $case_area   = $request->input('case_area', '');
+            $case_site   = $request->input('case_site', '');
+            $is_rem      = $request->input('is_rem', '');
+            $is_hidden   = $request->input('is_hidden', '');
 
-        $case->case_name   = $case_name;
-        $case->designer_id = $designer_id;
-        $case->worker_id   = $worker_id;
-        $case->case_style  = $case_style;
-        $case->case_area   = $case_area;
-        $case->case_site   = $case_site;
-        $case->is_rem      = $is_rem;
-        $case->is_hidden   = $is_hidden;
+            $case = new Cases;
+            $case->case_name   = $case_name;
+            $case->designer_id = $designer_id;
+            $case->worker_id   = $worker_id;
+            $case->case_style  = $case_style;
+            $case->case_area   = $case_area;
+            $case->case_site   = $case_site;
+            $case->is_rem      = $is_rem;
+            $case->is_hidden   = $is_hidden;
 
-        $case->save();
+            $case->save();
 //       dump($case->id);
 
 //
-        $preview1 = $request->input('preview1', '');
-        if ($preview1 != '') {
-            $photo            = new Photo;
-            $photo->path      = $preview1;
-            $photo->case_id   = $case->id;
-            $photo->stage     = CaseStage::STAGE_FINISH;
-            $photo->is_hidden = "F";
-            $photo->save();
+            $preview1 = $request->input('preview1', '');
+            if ($preview1 != '') {
+                $photo            = new Photo;
+                $photo->path      = $preview1;
+                $photo->case_id   = $case->id;
+                $photo->stage     = CaseStage::STAGE_FINISH;
+                $photo->is_hidden = "F";
+                $photo->save();
+            }
+
+            $preview2 = $request->input('preview2', '');
+            if ($preview2 != '') {
+                $photo            = new Photo;
+                $photo->path      = $preview2;
+                $photo->case_id   = $case->id;
+                $photo->stage     = CaseStage::STAGE_FINISH;
+                $photo->is_hidden = "F";
+                $photo->save();
+            }
+
+
+            $preview3 = $request->input('preview3', '');
+            if ($preview3 != '') {
+                $photo            = new Photo;
+                $photo->path      = $preview3;
+                $photo->case_id   = $case->id;
+                $photo->stage     = CaseStage::STAGE_FINISH;
+                $photo->is_hidden = "F";
+                $photo->save();
+            }
+
+
+            $preview4 = $request->input('preview4', '');
+            if ($preview4 != '') {
+                $photo            = new Photo;
+                $photo->path      = $preview4;
+                $photo->case_id   = $case->id;
+                $photo->stage     = CaseStage::STAGE_FINISH;
+                $photo->is_hidden = "F";
+                $photo->save();
+            }
+
+
+            $preview5 = $request->input('preview5', '');
+            if ($preview5 != '') {
+                $photo            = new Photo;
+                $photo->path      = $preview5;
+                $photo->case_id   = $case->id;
+                $photo->stage     = CaseStage::STAGE_FINISH;
+                $photo->is_hidden = "F";
+                $photo->save();
+            }
+
+
+            $preview6 = $request->input('preview6', '');
+            if ($preview6 != '') {
+                $photo            = new Photo;
+                $photo->path      = $preview6;
+                $photo->case_id   = $case->id;
+                $photo->stage     = CaseStage::STAGE_FINISH;
+                $photo->is_hidden = "F";
+                $photo->save();
+            }
+
+            $this->status = 0;
+            $this->msg    = '添加成功';
+            session()->put('temp_createcase_'.Auth::id(),$case->id);
+
+            return $this->toJson();
+        } elseif ($request->query('type') == 'createcasework') {
+            $temp_caseid = session()->get('temp_createcase_'.Auth::id());
+
+//            dd($temp_caseid);
+            $preview_start_1 = $request->input('preview_start_1', '');
+            if ($preview_start_1 != '') {
+                $photo            = new Photo;
+                $photo->path      = $preview_start_1;
+                $photo->case_id   = $temp_caseid;
+                $photo->stage     = CaseStage::STAGE_START;
+                $photo->is_hidden = "F";
+                $photo->save();
+            }
+
+            $preview_start_2 = $request->input('preview_start_2', '');
+            if ($preview_start_2 != '') {
+                $photo            = new Photo;
+                $photo->path      = $preview_start_2;
+                $photo->case_id   = $temp_caseid;
+                $photo->stage     = CaseStage::STAGE_START;
+                $photo->is_hidden = "F";
+                $photo->save();
+            }
+
+
+            $preview_start_3 = $request->input('preview_start_3', '');
+            if ($preview_start_3 != '') {
+                $photo            = new Photo;
+                $photo->path      = $preview_start_3;
+                $photo->case_id   = $temp_caseid;
+                $photo->stage     = CaseStage::STAGE_START;
+                $photo->is_hidden = "F";
+                $photo->save();
+            }
+
+
+            $preview_start_4 = $request->input('preview_start_4', '');
+            if ($preview_start_4 != '') {
+                $photo            = new Photo;
+                $photo->path      = $preview_start_4;
+                $photo->case_id   = $temp_caseid;
+                $photo->stage     = CaseStage::STAGE_START;
+                $photo->is_hidden = "F";
+                $photo->save();
+            }
+
+
+            $preview_start_5 = $request->input('preview_start_5', '');
+            if ($preview_start_5 != '') {
+                $photo            = new Photo;
+                $photo->path      = $preview_start_5;
+                $photo->case_id   = $temp_caseid;
+                $photo->stage     = CaseStage::STAGE_START;
+                $photo->is_hidden = "F";
+                $photo->save();
+            }
+
+
+            $preview_start_6 = $request->input('preview_start_6', '');
+            if ($preview_start_6 != '') {
+                $photo            = new Photo;
+                $photo->path      = $preview_start_6;
+                $photo->case_id   = $temp_caseid;
+                $photo->stage     = CaseStage::STAGE_START;
+                $photo->is_hidden = "F";
+                $photo->save();
+            }
+
+
+
+            $preview_DESIGNE_1 = $request->input('preview_DESIGNE_1', '');
+            if ($preview_DESIGNE_1 != '') {
+                $photo            = new Photo;
+                $photo->path      = $preview_DESIGNE_1;
+                $photo->case_id   = $temp_caseid;
+                $photo->stage     = CaseStage::STAGE_DESIGNE;
+                $photo->is_hidden = "F";
+                $photo->save();
+            }
+
+            $preview_DESIGNE_2 = $request->input('preview_DESIGNE_2', '');
+            if ($preview_DESIGNE_2 != '') {
+                $photo            = new Photo;
+                $photo->path      = $preview_DESIGNE_2;
+                $photo->case_id   = $temp_caseid;
+                $photo->stage     = CaseStage::STAGE_DESIGNE;
+                $photo->is_hidden = "F";
+                $photo->save();
+            }
+
+
+            $preview_DESIGNE_3 = $request->input('preview_DESIGNE_3', '');
+            if ($preview_DESIGNE_3 != '') {
+                $photo            = new Photo;
+                $photo->path      = $preview_DESIGNE_3;
+                $photo->case_id   = $temp_caseid;
+                $photo->stage     = CaseStage::STAGE_DESIGNE;
+                $photo->is_hidden = "F";
+                $photo->save();
+            }
+
+
+            $preview_DESIGNE_4 = $request->input('preview_DESIGNE_4', '');
+            if ($preview_DESIGNE_4 != '') {
+                $photo            = new Photo;
+                $photo->path      = $preview_DESIGNE_4;
+                $photo->case_id   = $temp_caseid;
+                $photo->stage     = CaseStage::STAGE_DESIGNE;
+                $photo->is_hidden = "F";
+                $photo->save();
+            }
+
+
+            $preview_DESIGNE_5 = $request->input('preview_DESIGNE_5', '');
+            if ($preview_DESIGNE_5 != '') {
+                $photo            = new Photo;
+                $photo->path      = $preview_DESIGNE_5;
+                $photo->case_id   = $temp_caseid;
+                $photo->stage     = CaseStage::STAGE_DESIGNE;
+                $photo->is_hidden = "F";
+                $photo->save();
+            }
+
+
+            $preview_DESIGNE_6 = $request->input('preview_DESIGNE_6', '');
+            if ($preview_DESIGNE_6 != '') {
+                $photo            = new Photo;
+                $photo->path      = $preview_DESIGNE_6;
+                $photo->case_id   = $temp_caseid;
+                $photo->stage     = CaseStage::STAGE_DESIGNE;
+                $photo->is_hidden = "F";
+                $photo->save();
+            }
+
+
+            $this->status = 0;
+            $this->msg    = '添加施工进度成功';
+
+            return $this->toJson();
         }
-
-        $preview2 = $request->input('preview2', '');
-        if ($preview2 != '') {
-            $photo            = new Photo;
-            $photo->path      = $preview2;
-            $photo->case_id   = $case->id;
-            $photo->stage     = CaseStage::STAGE_FINISH;
-            $photo->is_hidden = "F";
-            $photo->save();
-        }
-
-
-        $preview3 = $request->input('preview3', '');
-        if ($preview3 != '') {
-            $photo            = new Photo;
-            $photo->path      = $preview3;
-            $photo->case_id   = $case->id;
-            $photo->stage     = CaseStage::STAGE_FINISH;
-            $photo->is_hidden = "F";
-            $photo->save();
-        }
-
-
-        $preview4 = $request->input('preview4', '');
-        if ($preview4 != '') {
-            $photo            = new Photo;
-            $photo->path      = $preview4;
-            $photo->case_id   = $case->id;
-            $photo->stage     = CaseStage::STAGE_FINISH;
-            $photo->is_hidden = "F";
-            $photo->save();
-        }
-
-
-        $preview5 = $request->input('preview5', '');
-        if ($preview5 != '') {
-            $photo            = new Photo;
-            $photo->path      = $preview5;
-            $photo->case_id   = $case->id;
-            $photo->stage     = CaseStage::STAGE_FINISH;
-            $photo->is_hidden = "F";
-            $photo->save();
-        }
-
-
-        $preview6 = $request->input('preview6', '');
-        if ($preview6 != '') {
-            $photo            = new Photo;
-            $photo->path      = $preview6;
-            $photo->case_id   = $case->id;
-            $photo->stage     = CaseStage::STAGE_FINISH;
-            $photo->is_hidden = "F";
-            $photo->save();
-        }
-
-        $this->status = 0;
-        $this->msg    = '添加成功';
-
-        return $this->toJson();
 
 
     }

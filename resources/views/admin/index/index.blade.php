@@ -83,14 +83,23 @@
                     <li><a data-href="{{ route('admin.case.index') }}" data-title="案例列表"
                            href="javascript:;">案例列表 </a>
                     </li>
-                    {{--<li><a data-href="{{ route('admin.designer.create',['type'=>'designer']) }}" data-title="设计师"--}}
-                    {{--href="javascript:;">添加设计师 </a></li>--}}
-                    {{--<li><a data-href="{{ route('admin.designer.create',['type'=>'work']) }}" data-title="工长管理"--}}
-                    {{--href="javascript:;">添加工长 </a></li>--}}
+
                 </ul>
             </dd>
         </dl>
+        <dl id="menu-admin">
+            <dt><i class="Hui-iconfont">&#xe62d;</i>在建工地管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i>
+            </dt>
+            <dd>
 
+                <ul>
+                    <li><a data-href="{{ route('admin.worksite.index') }}" data-title="在建工地列表"
+                           href="javascript:;">在建工地列表 </a>
+                    </li>
+
+                </ul>
+            </dd>
+        </dl>
 
     </div>
 </aside>

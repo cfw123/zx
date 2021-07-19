@@ -40,6 +40,9 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['che
     // 案例管理
     Route::resource('/case','CaseController', ['as' => 'admin']);
 
+    // 在建工地管理
+    Route::resource('/worksite','GongdiController', ['as' => 'admin']);
+
 
 });
 

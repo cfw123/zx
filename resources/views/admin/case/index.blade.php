@@ -12,7 +12,7 @@
                 <thead>
                 <tr class="text-c">
                     <th width="80">ID</th>
-                    <th width="100">案例师名</th>
+                    <th width="100">案例名</th>
                     <th width="100">案例缩略图</th>
                     <th width="100">设计师名</th>
                     <th width="100">施工工长名</th>
@@ -84,6 +84,7 @@
                 success: ret => {
                     $(row).parents('tr').remove();
                     layer.msg('删除成功', {time: 2000, icon: 6});
+                    {{--creatIframe("{{route('admin.case.index')}}","案例列表")--}}
                 }
             });
 
