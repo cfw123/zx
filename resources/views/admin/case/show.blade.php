@@ -1,143 +1,121 @@
 @extends('layout.main')
 
 @section('content')
-
+    <style>
+        img {
+            width: 13% !important;
+            height: 10% !important;
+        }
+    </style>
 
 
     <article class="page-container">
-        {{--<form action="{{ route('admin.case.store') }}" method="post" class="form form-horizontal"--}}
-        {{--id="form-admin-case-add">--}}
 
-        <form action="" method="post" class="form form-horizontal" id="form-admin-case-add">
-            <input type="hidden" name="_token" value="{{csrf_token()}}"/>
+        <div class="col-xs-12 col-sm-6">
+            <form action="" method="post" class="form form-horizontal" id="form-admin-case-add">
+                {{--<input type="hidden" name="_token" value="{{csrf_token()}}"/>--}}
 
 
-            <div class="row cl">
-                <label class="form-label col-sm-2"><span class="c-red">*</span>案例名</label>
-                <div class="formControls col-sm-4">
-                    <input type="text" class="input-text" value="{{ $case->case_name }}" name="case_name">
-                </div>
-            </div>
-
-            <div class="row cl">
-                <label class="form-label col-sm-2"><span class="c-red">*</span>设计师名</label>
-                <div class="formControls col-sm-4">
-                    <div class="col-sm-4">
-                        <label><input type="input-text" name="designer_id"
-                                      value="{{ $case->designer->designer_name}}">
-                        </label>
+                <div class="row cl">
+                    <label class="form-label col-sm-2"><span class="c-red">*</span>案例名:</label>
+                    <div class="formControls col-sm-4">
+                        <p>{{ $case->case_name }}</p>
                     </div>
                 </div>
-            </div>
-            <div class="row cl">
-                <label class="form-label col-sm-2"><span class="c-red">*</span>施工工长名</label>
-                <div class="formControls col-sm-4">
 
-                    {{--@foreach ($workers as $worker)--}}
+                <div class="row cl">
+                    <label class="form-label col-sm-2"><span class="c-red">*</span>设计师名:</label>
+
                     <div class="col-sm-4">
-                        <label><input type="input-text" name="worker_id"
-                                      value="{{ $case->worker->designer_name}}">
-                        </label>
+                        <p>{{ $case->designer->designer_name}}</p>
+
                     </div>
-                    {{--@endforeach--}}
                 </div>
-            </div>
+                <div class="row cl">
+                    <label class="form-label col-sm-2"><span class="c-red">*</span>施工工长名:</label>
+                    <div class="formControls col-sm-4">
 
-            <div class="row cl">
-                <label class="form-label col-sm-2"><span class="c-red">*</span>案例风格</label>
-
-                <div class="col-sm-10">
-                    <select name="case_style" id="inputID" class="form-control">
-
-                            <option value="{{$case->case_style}}" @if($case->case_style=="简约、北欧、美式、日式" ) selected="selected" @endif> 简约、北欧、美式、日式</option>
-                            <option value="{{$case->case_style}}" @if($case->case_style=="轻奢、美式、简约、新中式" ) selected="selected" @endif> 轻奢、美式、简约、新中式</option>
-                            <option value="{{$case->case_style}}" @if($case->case_style=="现代、简美、欧式、简约" ) selected="selected" @endif> 现代、简美、欧式、简约</option>
-                            <option value="{{$case->case_style}}" @if($case->case_style=="北欧、简约、美式" ) selected="selected" @endif> 北欧、简约、美式</option>
-                            <option value="{{$case->case_style}}" @if($case->case_style=="新中式、简约、北欧" ) selected="selected" @endif> 新中式、简约、北欧</option>
-                            <option value="{{$case->case_style}}" @if($case->case_style=="港式、混搭、后现代" ) selected="selected" @endif> 港式、混搭、后现代</option>
-
-                        {{--@if($case->case_style== "港式、混搭、后现代" )--}}
-                            {{--<option value="港式、混搭、后现代" selected="selected"> 港式、混搭、后现代</option>--}}
-                        {{--@else--}}
-                            {{--<option value="港式、混搭、后现代"> 港式、混搭、后现代</option>--}}
-                        {{--@endif--}}
-
-                    </select>
-
+                        <p>{{ $case->worker->designer_name}}</p>
+                    </div>
                 </div>
-            </div>
-            <div class="row cl">
-                <label class="form-label col-sm-2"><span class="c-red">*</span>案例户型</label>
-                <div class="formControls col-sm-4">
-                    <input type="text" class="input-text" value="{{ $case->case_type }}" name="case_type">
-                </div>
-            </div>
-            <div class="row cl">
-                <label class="form-label col-sm-2"><span class="c-red">*</span>案例面积</label>
-                <div class="formControls col-sm-4">
-                    <input type="text" class="input-text" value="{{ $case->case_area }}" name="case_area">
-                </div>
-            </div>
-            <div class="row cl">
-                <label class="form-label col-sm-2"><span class="c-red">*</span>案例楼盘</label>
-                <div class="formControls col-sm-4">
-                    <input type="text" class="input-text" value="{{ $case->case_site }}" name="case_site">
-                </div>
-            </div>
 
-            <div class="row cl">
-                <label class="form-label col-xs-4 col-sm-2">图片：</label> @foreach($case->photos as $photo)
-                    {{--<h3>{{ $photo->path }}</h3>--}}
+                <div class="row cl">
+                    <label class="form-label col-sm-2"><span class="c-red">*</span>案例风格:</label>
+
+                    <div class="col-sm-10">
+                        <p>{{ $case->case_style ?  : "暂无数据"}}</p>
+
+                    </div>
+                </div>
+                <div class="row cl">
+                    <label class="form-label col-sm-2"><span class="c-red">*</span>案例户型:</label>
+                    <div class="formControls col-sm-4">
+                        <p>{{ $case->case_type or "暂无数据"}}</p>
+                    </div>
+                </div>
+                <div class="row cl">
+                    <label class="form-label col-sm-2"><span class="c-red">*</span>案例面积:</label>
+                    <div class="formControls col-sm-4">
+                        <p>{{ $case->case_area or  "暂无数据" }} </p>
+                    </div>
+                </div>
+                <div class="row cl">
+                    <label class="form-label col-sm-2"><span class="c-red">*</span>案例楼盘:</label>
+                    <div class="formControls col-sm-4">
+                        <p>{{ $case->case_site or "暂无数据"}}</p>
+                    </div>
+                </div>
+
+                <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-2">图片：</label>
+
+
                     <div class="formControls col-xs-8 col-sm-9">
-
-                    <img id="preview_id6" src="{{ $photo->path }}"
-                    style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
-                    onclick="$('#input_id5').click()"/>
-                    {{--<input type="file" name="file" id="input_id6" style="display: none;"--}}
-                    {{--onchange="return uploadImageToServer('input_id5','images', 'preview_id5');"/>--}}
+                        @foreach($photos[0] as $photo)
+                            {{--{{ dump($photo) }}--}}
+                            <img id="preview_id6" src="{{ $photo->path }}"
+                                 style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                            />
+                        @endforeach
                     </div>
-                @endforeach
-                {{--<div class="formControls col-xs-8 col-sm-9">--}}
 
-                    {{--<img id="preview_id6" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id5').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id6" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id5','images', 'preview_id5');"/>--}}
-                {{--</div>--}}
-            </div>
+                </div>
+
+                <div class="row cl">
+                    <label class="form-label col-sm-2">是否完工：</label>
+
+                    <p>{{ $case->is_rem }}</p>
 
 
-            <div class="row cl">
-                <label class="form-label col-sm-2">是否推荐：</label>
-
-                <label><input type="radio" name="is_rem" checked value="F">F</label>
-                &nbsp; &nbsp; &nbsp;
-                <label><input type="radio" name="is_rem" value="T">T</label>
+                </div>
+                <div class="row cl">
+                    <label class="form-label col-sm-2">是否隐藏：</label>
+                    <p>{{ $case->is_hidden }}</p>
 
 
-            </div>
+                </div>
 
-            <div class="row cl">
-                <label class="form-label col-sm-2">是否隐藏：</label>
-
-                <label><input type="radio" name="is_hidden" checked value="F">F</label>
-                &nbsp; &nbsp; &nbsp;
-                <label><input type="radio" name="is_hidden" value="T">T</label>
-
-
-            </div>
-            {{--<div class="row cl">--}}
-                {{--<div class="col-sm-10 col-sm-offset-2">--}}
-                    {{--<button type="submit" class="btn btn-success radius">--}}
-                    {{--<i class="icon-ok"></i>--}}
-                    {{--添加案例--}}
-                    {{--</button>--}}
-                    {{--<input style="margin: 20px 0; width: 200px;" class="btn btn-primary radius" type="submit"--}}
-                           {{--value="&nbsp;&nbsp;提交&nbsp;&nbsp;">--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        </form>
+            </form>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <form action="" method="post" class="form form-horizontal" id="form-admin-casework-add">
+                @for($i = 1; $i < 10; $i++)
+                <div class="row cl">
+                    <label class="form-label col-xs-4 col-sm-2">{{ $labels[$i] }}：</label>
+                    <div class="formControls col-xs-8 col-sm-9">
+                        @forelse($photos[$i] as $photo)
+                            {{--{{ dump($photo) }}--}}
+                            <img  src="{{ $photo->path }}"
+                                 style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                            />
+                            @empty
+                            <p>暂无数据</p>
+                        @endforelse
+                    </div>
+                </div>
+                @endfor
+            </form>
+        </div>
     </article>
 
 

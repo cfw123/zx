@@ -96,6 +96,9 @@
                     <li><a data-href="{{ route('admin.worksite.index') }}" data-title="在建工地列表"
                            href="javascript:;">在建工地列表 </a>
                     </li>
+                    <li><a data-href="{{ route('admin.worksite.index',['type'=>'nowork']) }}" data-title="在建工地列表"
+                           href="javascript:;">暂无在建工地列表 </a>
+                    </li>
 
                 </ul>
             </dd>

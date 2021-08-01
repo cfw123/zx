@@ -114,7 +114,7 @@
 
 
             <div class="row cl">
-                <label class="form-label col-sm-2">是否推荐：</label>
+                <label class="form-label col-sm-2">是否完工：</label>
 
                 <label><input type="radio" name="is_rem" checked value="F">F</label>
                 &nbsp; &nbsp; &nbsp;
@@ -187,254 +187,296 @@
             <div class="row cl">
                 <label class="form-label col-xs-4 col-sm-2"> 设计阶段：</label>
                 <div class="formControls col-xs-8 col-sm-9">
-                    <img id="preview_DESIGNE_id1" src="/admin/images/icon-add.png"
+                    <img id="preview_designe_id1" src="/admin/images/icon-add.png"
                          style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
-                         onclick="$('#input_DESIGNE_id1').click()"/>
-                    <input type="file" name="file" id="input_DESIGNE_id1" style="display: none;"
-                           onchange="return uploadImageToServer('input_DESIGNE_id1','images', 'preview_DESIGNE_id1');"/>
-                    <img id="preview_DESIGNE_id2" src="/admin/images/icon-add.png"
+                         onclick="$('#input_designe_id1').click()"/>
+                    <input type="file" name="file" id="input_designe_id1" style="display: none;"
+                           onchange="return uploadImageToServer('input_designe_id1','images', 'preview_designe_id1');"/>
+                    <img id="preview_designe_id2" src="/admin/images/icon-add.png"
                          style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
-                         onclick="$('#input_DESIGNE_id2').click()"/>
-                    <input type="file" name="file" id="input_DESIGNE_id2" style="display: none;"
-                           onchange="return uploadImageToServer('input_DESIGNE_id2','images', 'preview_DESIGNE_id2');"/>
-                    <img id="preview_DESIGNE_id3" src="/admin/images/icon-add.png"
+                         onclick="$('#input_designe_id2').click()"/>
+                    <input type="file" name="file" id="input_designe_id2" style="display: none;"
+                           onchange="return uploadImageToServer('input_designe_id2','images', 'preview_designe_id2');"/>
+                    <img id="preview_designe_id3" src="/admin/images/icon-add.png"
                          style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
-                         onclick="$('#input_DESIGNE_id3').click()"/>
-                    <input type="file" name="file" id="input_DESIGNE_id3" style="display: none;"
-                           onchange="return uploadImageToServer('input_DESIGNE_id3','images', 'preview_DESIGNE_id3');"/>
-                    <img id="preview_DESIGNE_id4" src="/admin/images/icon-add.png"
+                         onclick="$('#input_designe_id3').click()"/>
+                    <input type="file" name="file" id="input_designe_id3" style="display: none;"
+                           onchange="return uploadImageToServer('input_designe_id3','images', 'preview_designe_id3');"/>
+                    <img id="preview_designe_id4" src="/admin/images/icon-add.png"
                          style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
-                         onclick="$('#input_DESIGNE_id4').click()"/>
-                    <input type="file" name="file" id="input_DESIGNE_id4" style="display: none;"
-                           onchange="return uploadImageToServer('input_DESIGNE_id4','images', 'preview_DESIGNE_id4');"/>
-                    <img id="preview_DESIGNE_id5" src="/admin/images/icon-add.png"
+                         onclick="$('#input_designe_id4').click()"/>
+                    <input type="file" name="file" id="input_designe_id4" style="display: none;"
+                           onchange="return uploadImageToServer('input_designe_id4','images', 'preview_designe_id4');"/>
+                    <img id="preview_designe_id5" src="/admin/images/icon-add.png"
                          style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
-                         onclick="$('#input_DESIGNE_id5').click()"/>
-                    <input type="file" name="file" id="input_DESIGNE_id5" style="display: none;"
-                           onchange="return uploadImageToServer('input_DESIGNE_id5','images', 'preview_DESIGNE_id5');"/>
-                    <img id="preview_DESIGNE_id6" src="/admin/images/icon-add.png"
+                         onclick="$('#input_designe_id5').click()"/>
+                    <input type="file" name="file" id="input_designe_id5" style="display: none;"
+                           onchange="return uploadImageToServer('input_designe_id5','images', 'preview_designe_id5');"/>
+                    <img id="preview_designe_id6" src="/admin/images/icon-add.png"
                          style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
-                         onclick="$('#input_DESIGNE_id6').click()"/>
-                    <input type="file" name="file" id="input_DESIGNE_id6" style="display: none;"
-                           onchange="return uploadImageToServer('input_DESIGNE_id6','images', 'preview_DESIGNE_id6');"/>
+                         onclick="$('#input_designe_id6').click()"/>
+                    <input type="file" name="file" id="input_designe_id6" style="display: none;"
+                           onchange="return uploadImageToServer('input_designe_id6','images', 'preview_designe_id6');"/>
                 </div>
             </div>
 
-            {{--<div class="row cl">--}}
-                {{--<label class="form-label col-xs-4 col-sm-2"> 墙体改造：</label>--}}
-                {{--<div class="formControls col-xs-8 col-sm-9">--}}
-                    {{--<img id="preview_id1" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id1').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id1" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id1','images', 'preview_id1');"/>--}}
-                    {{--<img id="preview_id2" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id2').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id2" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id2','images', 'preview_id2');"/>--}}
-                    {{--<img id="preview_id3" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id3').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id3" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id3','images', 'preview_id3');"/>--}}
-                    {{--<img id="preview_id4" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id4').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id4" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id4','images', 'preview_id4');"/>--}}
-                    {{--<img id="preview_id5" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id5').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id5" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id5','images', 'preview_id5');"/>--}}
-                    {{--<img id="preview_id6" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id5').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id6" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id5','images', 'preview_id5');"/>--}}
-                {{--</div>--}}
-            {{--</div>--}}
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"> 墙体改造：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <img id="preview_wall_id1" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_wall_id1').click()"/>
+                    <input type="file" name="file" id="input_wall_id1" style="display: none;"
+                           onchange="return uploadImageToServer('input_wall_id1','images', 'preview_wall_id1');"/>
+                    <img id="preview_wall_id2" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_wall_id2').click()"/>
+                    <input type="file" name="file" id="input_wall_id2" style="display: none;"
+                           onchange="return uploadImageToServer('input_wall_id2','images', 'preview_wall_id2');"/>
+                    <img id="preview_wall_id3" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_wall_id3').click()"/>
+                    <input type="file" name="file" id="input_wall_id3" style="display: none;"
+                           onchange="return uploadImageToServer('input_wall_id3','images', 'preview_wall_id3');"/>
+                    <img id="preview_wall_id4" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_wall_id4').click()"/>
+                    <input type="file" name="file" id="input_wall_id4" style="display: none;"
+                           onchange="return uploadImageToServer('input_wall_id4','images', 'preview_wall_id4');"/>
+                    <img id="preview_wall_id5" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_wall_id5').click()"/>
+                    <input type="file" name="file" id="input_wall_id5" style="display: none;"
+                           onchange="return uploadImageToServer('input_wall_id5','images', 'preview_wall_id5');"/>
+                    <img id="preview_wall_id6" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_wall_id6').click()"/>
+                    <input type="file" name="file" id="input_wall_id6" style="display: none;"
+                           onchange="return uploadImageToServer('input_wall_id6','images', 'preview_wall_id6');"/>
+                </div>
+            </div>
 
-            {{--<div class="row cl">--}}
-                {{--<label class="form-label col-xs-4 col-sm-2"> 泥瓦工阶段：</label>--}}
-                {{--<div class="formControls col-xs-8 col-sm-9">--}}
-                    {{--<img id="preview_id1" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id1').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id1" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id1','images', 'preview_id1');"/>--}}
-                    {{--<img id="preview_id2" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id2').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id2" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id2','images', 'preview_id2');"/>--}}
-                    {{--<img id="preview_id3" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id3').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id3" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id3','images', 'preview_id3');"/>--}}
-                    {{--<img id="preview_id4" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id4').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id4" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id4','images', 'preview_id4');"/>--}}
-                    {{--<img id="preview_id5" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id5').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id5" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id5','images', 'preview_id5');"/>--}}
-                    {{--<img id="preview_id6" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id5').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id6" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id5','images', 'preview_id5');"/>--}}
-                {{--</div>--}}
-            {{--</div>--}}
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"> 水电阶段：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <img id="preview_water_id1" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_water_id1').click()"/>
+                    <input type="file" name="file" id="input_water_id1" style="display: none;"
+                           onchange="return uploadImageToServer('input_water_id1','images', 'preview_water_id1');"/>
+                    <img id="preview_water_id2" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_water_id2').click()"/>
+                    <input type="file" name="file" id="input_water_id2" style="display: none;"
+                           onchange="return uploadImageToServer('input_water_id2','images', 'preview_water_id2');"/>
+                    <img id="preview_water_id3" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_water_id3').click()"/>
+                    <input type="file" name="file" id="input_water_id3" style="display: none;"
+                           onchange="return uploadImageToServer('input_water_id3','images', 'preview_water_id3');"/>
+                    <img id="preview_water_id4" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_water_id4').click()"/>
+                    <input type="file" name="file" id="input_water_id4" style="display: none;"
+                           onchange="return uploadImageToServer('input_water_id4','images', 'preview_water_id4');"/>
+                    <img id="preview_water_id5" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_water_id5').click()"/>
+                    <input type="file" name="file" id="input_water_id5" style="display: none;"
+                           onchange="return uploadImageToServer('input_water_id5','images', 'preview_water_id5');"/>
+                    <img id="preview_water_id6" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_water_id6').click()"/>
+                    <input type="file" name="file" id="input_water_id6" style="display: none;"
+                           onchange="return uploadImageToServer('input_water_id6','images', 'preview_water_id6');"/>
+                </div>
+            </div>
 
-            {{--<div class="row cl">--}}
-                {{--<label class="form-label col-xs-4 col-sm-2"> 木工阶段：</label>--}}
-                {{--<div class="formControls col-xs-8 col-sm-9">--}}
-                    {{--<img id="preview_id1" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id1').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id1" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id1','images', 'preview_id1');"/>--}}
-                    {{--<img id="preview_id2" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id2').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id2" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id2','images', 'preview_id2');"/>--}}
-                    {{--<img id="preview_id3" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id3').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id3" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id3','images', 'preview_id3');"/>--}}
-                    {{--<img id="preview_id4" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id4').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id4" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id4','images', 'preview_id4');"/>--}}
-                    {{--<img id="preview_id5" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id5').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id5" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id5','images', 'preview_id5');"/>--}}
-                    {{--<img id="preview_id6" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id5').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id6" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id5','images', 'preview_id5');"/>--}}
-                {{--</div>--}}
-            {{--</div>--}}
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"> 泥瓦工阶段：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <img id="preview_brick_id1" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_brick_id1').click()"/>
+                    <input type="file" name="file" id="input_brick_id1" style="display: none;"
+                           onchange="return uploadImageToServer('input_brick_id1','images', 'preview_brick_id1');"/>
+                    <img id="preview_brick_id2" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_brick_id2').click()"/>
+                    <input type="file" name="file" id="input_brick_id2" style="display: none;"
+                           onchange="return uploadImageToServer('input_brick_id2','images', 'preview_brick_id2');"/>
+                    <img id="preview_brick_id3" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_brick_id3').click()"/>
+                    <input type="file" name="file" id="input_brick_id3" style="display: none;"
+                           onchange="return uploadImageToServer('input_brick_id3','images', 'preview_brick_id3');"/>
+                    <img id="preview_brick_id4" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_brick_id4').click()"/>
+                    <input type="file" name="file" id="input_brick_id4" style="display: none;"
+                           onchange="return uploadImageToServer('input_brick_id4','images', 'preview_brick_id4');"/>
+                    <img id="preview_brick_id5" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_brick_id5').click()"/>
+                    <input type="file" name="file" id="input_brick_id5" style="display: none;"
+                           onchange="return uploadImageToServer('input_brick_id5','images', 'preview_brick_id5');"/>
+                    <img id="preview_brick_id6" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_brick_id6').click()"/>
+                    <input type="file" name="file" id="input_brick_id6" style="display: none;"
+                           onchange="return uploadImageToServer('input_brick_id6','images', 'preview_brick_id6');"/>
+                </div>
+            </div>
 
-            {{--<div class="row cl">--}}
-                {{--<label class="form-label col-xs-4 col-sm-2"> 油漆工阶段：</label>--}}
-                {{--<div class="formControls col-xs-8 col-sm-9">--}}
-                    {{--<img id="preview_id1" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id1').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id1" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id1','images', 'preview_id1');"/>--}}
-                    {{--<img id="preview_id2" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id2').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id2" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id2','images', 'preview_id2');"/>--}}
-                    {{--<img id="preview_id3" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id3').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id3" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id3','images', 'preview_id3');"/>--}}
-                    {{--<img id="preview_id4" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id4').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id4" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id4','images', 'preview_id4');"/>--}}
-                    {{--<img id="preview_id5" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id5').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id5" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id5','images', 'preview_id5');"/>--}}
-                    {{--<img id="preview_id6" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id5').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id6" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id5','images', 'preview_id5');"/>--}}
-                {{--</div>--}}
-            {{--</div>--}}
 
-            {{--<div class="row cl">--}}
-                {{--<label class="form-label col-xs-4 col-sm-2"> 安装阶段：</label>--}}
-                {{--<div class="formControls col-xs-8 col-sm-9">--}}
-                    {{--<img id="preview_id1" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id1').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id1" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id1','images', 'preview_id1');"/>--}}
-                    {{--<img id="preview_id2" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id2').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id2" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id2','images', 'preview_id2');"/>--}}
-                    {{--<img id="preview_id3" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id3').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id3" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id3','images', 'preview_id3');"/>--}}
-                    {{--<img id="preview_id4" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id4').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id4" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id4','images', 'preview_id4');"/>--}}
-                    {{--<img id="preview_id5" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id5').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id5" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id5','images', 'preview_id5');"/>--}}
-                    {{--<img id="preview_id6" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id5').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id6" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id5','images', 'preview_id5');"/>--}}
-                {{--</div>--}}
-            {{--</div>--}}
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"> 木工阶段：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <img id="preview_wood_id1" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_wood_id1').click()"/>
+                    <input type="file" name="file" id="input_wood_id1" style="display: none;"
+                           onchange="return uploadImageToServer('input_wood_id1','images', 'preview_wood_id1');"/>
+                    <img id="preview_wood_id2" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_wood_id2').click()"/>
+                    <input type="file" name="file" id="input_wood_id2" style="display: none;"
+                           onchange="return uploadImageToServer('input_wood_id2','images', 'preview_wood_id2');"/>
+                    <img id="preview_wood_id3" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_wood_id3').click()"/>
+                    <input type="file" name="file" id="input_wood_id3" style="display: none;"
+                           onchange="return uploadImageToServer('input_wood_id3','images', 'preview_wood_id3');"/>
+                    <img id="preview_wood_id4" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_wood_id4').click()"/>
+                    <input type="file" name="file" id="input_wood_id4" style="display: none;"
+                           onchange="return uploadImageToServer('input_wood_id4','images', 'preview_wood_id4');"/>
+                    <img id="preview_wood_id5" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_wood_id5').click()"/>
+                    <input type="file" name="file" id="input_wood_id5" style="display: none;"
+                           onchange="return uploadImageToServer('input_wood_id5','images', 'preview_wood_id5');"/>
+                    <img id="preview_wood_id6" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_wood_id6').click()"/>
+                    <input type="file" name="file" id="input_wood_id6" style="display: none;"
+                           onchange="return uploadImageToServer('input_wood_id6','images', 'preview_wood_id6');"/>
+                </div>
+            </div>
 
-            {{--<div class="row cl">--}}
-                {{--<label class="form-label col-xs-4 col-sm-2"> 验收阶段：</label>--}}
-                {{--<div class="formControls col-xs-8 col-sm-9">--}}
-                    {{--<img id="preview_id1" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id1').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id1" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id1','images', 'preview_id1');"/>--}}
-                    {{--<img id="preview_id2" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id2').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id2" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id2','images', 'preview_id2');"/>--}}
-                    {{--<img id="preview_id3" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id3').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id3" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id3','images', 'preview_id3');"/>--}}
-                    {{--<img id="preview_id4" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id4').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id4" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id4','images', 'preview_id4');"/>--}}
-                    {{--<img id="preview_id5" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id5').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id5" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id5','images', 'preview_id5');"/>--}}
-                    {{--<img id="preview_id6" src="/admin/images/icon-add.png"--}}
-                         {{--style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"--}}
-                         {{--onclick="$('#input_id5').click()"/>--}}
-                    {{--<input type="file" name="file" id="input_id6" style="display: none;"--}}
-                           {{--onchange="return uploadImageToServer('input_id5','images', 'preview_id5');"/>--}}
-                {{--</div>--}}
-            {{--</div>--}}
+
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"> 油漆工阶段：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <img id="preview_paint_id1" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_paint_id1').click()"/>
+                    <input type="file" name="file" id="input_paint_id1" style="display: none;"
+                           onchange="return uploadImageToServer('input_paint_id1','images', 'preview_paint_id1');"/>
+                    <img id="preview_paint_id2" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_paint_id2').click()"/>
+                    <input type="file" name="file" id="input_paint_id2" style="display: none;"
+                           onchange="return uploadImageToServer('input_paint_id2','images', 'preview_paint_id2');"/>
+                    <img id="preview_paint_id3" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_paint_id3').click()"/>
+                    <input type="file" name="file" id="input_paint_id3" style="display: none;"
+                           onchange="return uploadImageToServer('input_paint_id3','images', 'preview_paint_id3');"/>
+                    <img id="preview_paint_id4" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_paint_id4').click()"/>
+                    <input type="file" name="file" id="input_paint_id4" style="display: none;"
+                           onchange="return uploadImageToServer('input_paint_id4','images', 'preview_paint_id4');"/>
+                    <img id="preview_paint_id5" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_paint_id5').click()"/>
+                    <input type="file" name="file" id="input_paint_id5" style="display: none;"
+                           onchange="return uploadImageToServer('input_paint_id5','images', 'preview_paint_id5');"/>
+                    <img id="preview_paint_id6" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_paint_id6').click()"/>
+                    <input type="file" name="file" id="input_paint_id6" style="display: none;"
+                           onchange="return uploadImageToServer('input_paint_id6','images', 'preview_paint_id6');"/>
+                </div>
+            </div>
+
+
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"> 安装阶段：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <img id="preview_install_id1" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_install_id1').click()"/>
+                    <input type="file" name="file" id="input_install_id1" style="display: none;"
+                           onchange="return uploadImageToServer('input_install_id1','images', 'preview_install_id1');"/>
+                    <img id="preview_install_id2" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_install_id2').click()"/>
+                    <input type="file" name="file" id="input_install_id2" style="display: none;"
+                           onchange="return uploadImageToServer('input_install_id2','images', 'preview_install_id2');"/>
+                    <img id="preview_install_id3" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_install_id3').click()"/>
+                    <input type="file" name="file" id="input_install_id3" style="display: none;"
+                           onchange="return uploadImageToServer('input_install_id3','images', 'preview_install_id3');"/>
+                    <img id="preview_install_id4" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_install_id4').click()"/>
+                    <input type="file" name="file" id="input_install_id4" style="display: none;"
+                           onchange="return uploadImageToServer('input_install_id4','images', 'preview_install_id4');"/>
+                    <img id="preview_install_id5" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_install_id5').click()"/>
+                    <input type="file" name="file" id="input_install_id5" style="display: none;"
+                           onchange="return uploadImageToServer('input_install_id5','images', 'preview_install_id5');"/>
+                    <img id="preview_install_id6" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_install_id6').click()"/>
+                    <input type="file" name="file" id="input_install_id6" style="display: none;"
+                           onchange="return uploadImageToServer('input_install_id6','images', 'preview_install_id6');"/>
+                </div>
+            </div>
+
+
+
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2"> 验收阶段：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <img id="preview_check_id1" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_check_id1').click()"/>
+                    <input type="file" name="file" id="input_check_id1" style="display: none;"
+                           onchange="return uploadImageToServer('input_check_id1','images', 'preview_check_id1');"/>
+                    <img id="preview_check_id2" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_check_id2').click()"/>
+                    <input type="file" name="file" id="input_check_id2" style="display: none;"
+                           onchange="return uploadImageToServer('input_check_id2','images', 'preview_check_id2');"/>
+                    <img id="preview_check_id3" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_check_id3').click()"/>
+                    <input type="file" name="file" id="input_check_id3" style="display: none;"
+                           onchange="return uploadImageToServer('input_check_id3','images', 'preview_check_id3');"/>
+                    <img id="preview_check_id4" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_check_id4').click()"/>
+                    <input type="file" name="file" id="input_check_id4" style="display: none;"
+                           onchange="return uploadImageToServer('input_check_id4','images', 'preview_check_id4');"/>
+                    <img id="preview_check_id5" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_check_id5').click()"/>
+                    <input type="file" name="file" id="input_check_id5" style="display: none;"
+                           onchange="return uploadImageToServer('input_check_id5','images', 'preview_check_id5');"/>
+                    <img id="preview_check_id6" src="/admin/images/icon-add.png"
+                         style="border: 1px solid #B8B9B9; width: 100px; height: 100px;"
+                         onclick="$('#input_check_id6').click()"/>
+                    <input type="file" name="file" id="input_check_id6" style="display: none;"
+                           onchange="return uploadImageToServer('input_check_id6','images', 'preview_check_id6');"/>
+                </div>
+            </div>
+
 
             <div class="row cl">
                 <div class="col-sm-10 col-sm-offset-2">
@@ -442,7 +484,7 @@
                     {{--<i class="icon-ok"></i>--}}
                     {{--添加案例--}}
                     {{--</button>--}}
-                    <input style="margin: 20px 0; width: 200px;" class="btn btn-primary radius" type="submit"
+                    <input id="submit02" style="margin: 20px 0; width: 200px;" disabled="disabled" class="btn btn-default radius" type="submit"
                            value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
                 </div>
             </div>
@@ -503,6 +545,7 @@
                               $('.layui-layer-loading').css('display','none');
 
                               $('#submit01').attr("disabled","disabled").removeClass('btn-primary').addClass('btn-default');
+                              $('#submit02').removeAttr("disabled").removeClass('btn-default').addClass('btn-primary');
                                 // parent.location.reload();
                             },
                             error: function (xhr, status, error) {
@@ -539,13 +582,68 @@
                                 preview_start_5: ($('#preview_start_id5').attr('src') != '/admin/images/icon-add.png' ? $('#preview_start_id5').attr('src') : ''),
                                 preview_start_6: ($('#preview_start_id6').attr('src') != '/admin/images/icon-add.png' ? $('#preview_start_id6').attr('src') : ''),
 
-                                preview_DESIGNE_1: ($('#preview_DESIGNE_id1').attr('src') != '/admin/images/icon-add.png' ? $('#preview_DESIGNE_id1').attr('src') : ''),
-                                preview_DESIGNE_2: ($('#preview_DESIGNE_id2').attr('src') != '/admin/images/icon-add.png' ? $('#preview_DESIGNE_id2').attr('src') : ''),
-                                preview_DESIGNE_3: ($('#preview_DESIGNE_id3').attr('src') != '/admin/images/icon-add.png' ? $('#preview_DESIGNE_id3').attr('src') : ''),
-                                preview_DESIGNE_4: ($('#preview_DESIGNE_id4').attr('src') != '/admin/images/icon-add.png' ? $('#preview_DESIGNE_id4').attr('src') : ''),
-                                preview_DESIGNE_5: ($('#preview_DESIGNE_id5').attr('src') != '/admin/images/icon-add.png' ? $('#preview_DESIGNE_id5').attr('src') : ''),
-                                preview_DESIGNE_6: ($('#preview_DESIGNE_id6').attr('src') != '/admin/images/icon-add.png' ? $('#preview_DESIGNE_id6').attr('src') : ''),
+                                preview_designe_1: ($('#preview_designe_id1').attr('src') != '/admin/images/icon-add.png' ? $('#preview_designe_id1').attr('src') : ''),
+                                preview_designe_2: ($('#preview_designe_id2').attr('src') != '/admin/images/icon-add.png' ? $('#preview_designe_id2').attr('src') : ''),
+                                preview_designe_3: ($('#preview_designe_id3').attr('src') != '/admin/images/icon-add.png' ? $('#preview_designe_id3').attr('src') : ''),
+                                preview_designe_4: ($('#preview_designe_id4').attr('src') != '/admin/images/icon-add.png' ? $('#preview_designe_id4').attr('src') : ''),
+                                preview_designe_5: ($('#preview_designe_id5').attr('src') != '/admin/images/icon-add.png' ? $('#preview_designe_id5').attr('src') : ''),
+                                preview_designe_6: ($('#preview_designe_id6').attr('src') != '/admin/images/icon-add.png' ? $('#preview_designe_id6').attr('src') : ''),
 
+
+                                preview_wall_1: ($('#preview_wall_id1').attr('src') != '/admin/images/icon-add.png' ? $('#preview_wall_id1').attr('src') : ''),
+                                preview_wall_2: ($('#preview_wall_id2').attr('src') != '/admin/images/icon-add.png' ? $('#preview_wall_id2').attr('src') : ''),
+                                preview_wall_3: ($('#preview_wall_id3').attr('src') != '/admin/images/icon-add.png' ? $('#preview_wall_id3').attr('src') : ''),
+                                preview_wall_4: ($('#preview_wall_id4').attr('src') != '/admin/images/icon-add.png' ? $('#preview_wall_id4').attr('src') : ''),
+                                preview_wall_5: ($('#preview_wall_id5').attr('src') != '/admin/images/icon-add.png' ? $('#preview_wall_id5').attr('src') : ''),
+                                preview_wall_6: ($('#preview_wall_id6').attr('src') != '/admin/images/icon-add.png' ? $('#preview_wall_id6').attr('src') : ''),
+
+
+                                preview_water_1: ($('#preview_water_id1').attr('src') != '/admin/images/icon-add.png' ? $('#preview_water_id1').attr('src') : ''),
+                                preview_water_2: ($('#preview_water_id2').attr('src') != '/admin/images/icon-add.png' ? $('#preview_water_id2').attr('src') : ''),
+                                preview_water_3: ($('#preview_water_id3').attr('src') != '/admin/images/icon-add.png' ? $('#preview_water_id3').attr('src') : ''),
+                                preview_water_4: ($('#preview_water_id4').attr('src') != '/admin/images/icon-add.png' ? $('#preview_water_id4').attr('src') : ''),
+                                preview_water_5: ($('#preview_water_id5').attr('src') != '/admin/images/icon-add.png' ? $('#preview_water_id5').attr('src') : ''),
+                                preview_water_6: ($('#preview_water_id6').attr('src') != '/admin/images/icon-add.png' ? $('#preview_water_id6').attr('src') : ''),
+
+
+                                preview_brick_1: ($('#preview_brick_id1').attr('src') != '/admin/images/icon-add.png' ? $('#preview_brick_id1').attr('src') : ''),
+                                preview_brick_2: ($('#preview_brick_id2').attr('src') != '/admin/images/icon-add.png' ? $('#preview_brick_id2').attr('src') : ''),
+                                preview_brick_3: ($('#preview_brick_id3').attr('src') != '/admin/images/icon-add.png' ? $('#preview_brick_id3').attr('src') : ''),
+                                preview_brick_4: ($('#preview_brick_id4').attr('src') != '/admin/images/icon-add.png' ? $('#preview_brick_id4').attr('src') : ''),
+                                preview_brick_5: ($('#preview_brick_id5').attr('src') != '/admin/images/icon-add.png' ? $('#preview_brick_id5').attr('src') : ''),
+                                preview_brick_6: ($('#preview_brick_id6').attr('src') != '/admin/images/icon-add.png' ? $('#preview_brick_id6').attr('src') : ''),
+
+
+                                preview_wood_1: ($('#preview_wood_id1').attr('src') != '/admin/images/icon-add.png' ? $('#preview_wood_id1').attr('src') : ''),
+                                preview_wood_2: ($('#preview_wood_id2').attr('src') != '/admin/images/icon-add.png' ? $('#preview_wood_id2').attr('src') : ''),
+                                preview_wood_3: ($('#preview_wood_id3').attr('src') != '/admin/images/icon-add.png' ? $('#preview_wood_id3').attr('src') : ''),
+                                preview_wood_4: ($('#preview_wood_id4').attr('src') != '/admin/images/icon-add.png' ? $('#preview_wood_id4').attr('src') : ''),
+                                preview_wood_5: ($('#preview_wood_id5').attr('src') != '/admin/images/icon-add.png' ? $('#preview_wood_id5').attr('src') : ''),
+                                preview_wood_6: ($('#preview_wood_id6').attr('src') != '/admin/images/icon-add.png' ? $('#preview_wood_id6').attr('src') : ''),
+
+
+                                preview_paint_1: ($('#preview_paint_id1').attr('src') != '/admin/images/icon-add.png' ? $('#preview_paint_id1').attr('src') : ''),
+                                preview_paint_2: ($('#preview_paint_id2').attr('src') != '/admin/images/icon-add.png' ? $('#preview_paint_id2').attr('src') : ''),
+                                preview_paint_3: ($('#preview_paint_id3').attr('src') != '/admin/images/icon-add.png' ? $('#preview_paint_id3').attr('src') : ''),
+                                preview_paint_4: ($('#preview_paint_id4').attr('src') != '/admin/images/icon-add.png' ? $('#preview_paint_id4').attr('src') : ''),
+                                preview_paint_5: ($('#preview_paint_id5').attr('src') != '/admin/images/icon-add.png' ? $('#preview_paint_id5').attr('src') : ''),
+                                preview_paint_6: ($('#preview_paint_id6').attr('src') != '/admin/images/icon-add.png' ? $('#preview_paint_id6').attr('src') : ''),
+
+
+                                preview_install_1: ($('#preview_install_id1').attr('src') != '/admin/images/icon-add.png' ? $('#preview_install_id1').attr('src') : ''),
+                                preview_install_2: ($('#preview_install_id2').attr('src') != '/admin/images/icon-add.png' ? $('#preview_install_id2').attr('src') : ''),
+                                preview_install_3: ($('#preview_install_id3').attr('src') != '/admin/images/icon-add.png' ? $('#preview_install_id3').attr('src') : ''),
+                                preview_install_4: ($('#preview_install_id4').attr('src') != '/admin/images/icon-add.png' ? $('#preview_install_id4').attr('src') : ''),
+                                preview_install_5: ($('#preview_install_id5').attr('src') != '/admin/images/icon-add.png' ? $('#preview_install_id5').attr('src') : ''),
+                                preview_install_6: ($('#preview_install_id6').attr('src') != '/admin/images/icon-add.png' ? $('#preview_install_id6').attr('src') : ''),
+
+
+                                preview_check_1: ($('#preview_check_id1').attr('src') != '/admin/images/icon-add.png' ? $('#preview_check_id1').attr('src') : ''),
+                                preview_check_2: ($('#preview_check_id2').attr('src') != '/admin/images/icon-add.png' ? $('#preview_check_id2').attr('src') : ''),
+                                preview_check_3: ($('#preview_check_id3').attr('src') != '/admin/images/icon-add.png' ? $('#preview_check_id3').attr('src') : ''),
+                                preview_check_4: ($('#preview_check_id4').attr('src') != '/admin/images/icon-add.png' ? $('#preview_check_id4').attr('src') : ''),
+                                preview_check_5: ($('#preview_check_id5').attr('src') != '/admin/images/icon-add.png' ? $('#preview_check_id5').attr('src') : ''),
+                                preview_check_6: ($('#preview_check_id6').attr('src') != '/admin/images/icon-add.png' ? $('#preview_check_id6').attr('src') : ''),
 
                                 _token: "{{ csrf_token() }}"
                             },

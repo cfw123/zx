@@ -41,7 +41,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['che
     Route::resource('/case','CaseController', ['as' => 'admin']);
 
     // 在建工地管理
-    Route::resource('/worksite','GongdiController', ['as' => 'admin']);
+    Route::get('/worksite','GongdiController@index', ['as' => 'admin'])->name('admin.worksite.index');
 
 
 });

@@ -21,7 +21,7 @@
                     <th width="100">案例面积</th>
                     <th width="100">案例楼盘</th>
 
-                    <th width="100">是否推荐</th>
+                    <th width="100">是否完工</th>
                     <th width="100">是否隐藏</th>
                     <th width="100">操作</th>
                 </tr>
@@ -31,9 +31,9 @@
                     <tr>
                         <td>{{$case->id}}</td>
                         <td>{{$case->case_name}}</td>
-                        <td><img src="{{$case->photos->first()['path']}}" style="height: 80px" alt=""></td>
-                        <td>{{$case->designer->designer_name}}</td>
-                        <td>{{$case->worker->designer_name}}</td>
+                        <td><img src="{{$case->photos->where('stage',0)->first()['path']}}" style="height: 80px" alt=""></td>
+                        <td>{{$case->designer->designer_name or '暂无数据'}}</td>
+                        <td>{{$case->worker->designer_name or '暂无数据'}}</td>
                         <td>{{$case->case_style}}</td>
                         <td>{{$case->case_type}}</td>
                         <td>{{$case->case_area}}</td>
@@ -44,15 +44,14 @@
 
 
                         <td>
-                            <a style="text-decoration:none" class="ml-12"
-                               href="{{ route('admin.case.edit',$case->id) }}"><i
-                                        class="Hui-iconfont">&#xe60c;</i>
-                            </a>
-                            <a title="编辑" href="{{ route('admin.case.show',$case->id) }}"
-                               {{--onclick='nav_show(this,"{{ route('admin.case.show',$case->id) }}")'--}}
+                            <a title="编辑"  href="javascript:;"
+                               onclick='case_edit("{{ route('admin.case.edit',$case->id) }}",{{$case->id}})'
+                               class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe60c;</i></a>
+                            <a title="详情"  href="javascript:;"
+                               onclick='case_info("{{ route('admin.case.show',$case->id) }}",{{$case->id}})'
                                class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe725;</i></a>
                             <a title="删除" href="javascript:;"
-                               onclick='nav_del(this,"{{ route('admin.case.destroy',$case->id) }}")'
+                               onclick='case_del(this,"{{ route('admin.case.destroy',$case->id) }}")'
                                class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a>
                         </td>
                         @empty
@@ -70,8 +69,16 @@
 @section('js')
     <script>
 
+        function case_edit(url,id){
+            creatIframe(url,"案例"+id+"编辑页") ;
+        }
 
-        function nav_del(row, url) {
+        function case_info(url,id){
+            creatIframe(url,"案例"+id+"详情页") ;
+        }
+
+
+        function case_del(row, url) {
             // 阻止默认事件
 
             $.ajax({
@@ -82,13 +89,15 @@
                 },
                 dataType: 'json',
                 success: ret => {
-                    $(row).parents('tr').remove();
-                    layer.msg('删除成功', {time: 2000, icon: 6});
+                    window.location.reload();
+                    // console.log(2222);
+                    // $(row).parents('tr').remove();
+                    // layer.msg('删除成功', {time: 2000, icon: 6});
                     {{--creatIframe("{{route('admin.case.index')}}","案例列表")--}}
                 }
             });
 
-            // return false;
+            return false;
         }
     </script>
 @endsection

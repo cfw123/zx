@@ -1,28 +1,31 @@
 <?php
 
-function st($param) {
+function st($param)
+{
     return 'http://127.0.0.1:8000/' . $param;
 }
 
-function treeLevel(array $data, string $html = '---', int $pid = 0, int $level = 0) {
+function treeLevel(array $data, string $html = '---', int $pid = 0, int $level = 0)
+{
     static $arr = [];
     foreach ($data as $val) {
         if ($val['pid'] == $pid) {
-            $val['html'] = str_repeat($html, $level);
+            $val['html']  = str_repeat($html, $level);
             $val['level'] = $level + 1;
-            $arr[] = $val;
+            $arr[]        = $val;
             treeLevel($data, $html, $val['id'], $val['level']);;
         }
     }
     return $arr;
 }
 
-function subTree(array $data, int $pid = 0) {
+function subTree(array $data, int $pid = 0)
+{
     $arr = [];
     foreach ($data as $val) {
         if ($val['pid'] == $pid) {
             $val['sub'] = subTree($data, $val['id']);
-            $arr[] = $val;
+            $arr[]      = $val;
         }
     }
     return $arr;
@@ -36,7 +39,8 @@ function subTree(array $data, int $pid = 0) {
  * @param  string $file 上传的文件绝对地址
  * @return [type]       [description]
  */
-function http_request($url, $ret = '', $file = '') {
+function http_request($url, $ret = '', $file = '')
+{
     if (!empty($file)) {  // 有文件上传
         # php5.5之前 '@'.$file;就可以进地文件上传
         # $ret['pic'] = '@'.$file;
@@ -80,3 +84,30 @@ function http_request($url, $ret = '', $file = '') {
     curl_close($ch);
     return $data;
 }
+
+
+
+$previewArr =[
+    'preview_start_',
+    ' preview_designe_',
+    ' preview_wall_',
+    'preview_water_',
+    'preview_brick_',
+    'preview_wood_',
+    'preview_paint_',
+    'preview_install_',
+    'preview_check_',
+
+
+];
+//echo 222;
+$newArr = [];
+for($i=0;$i<9;$i++){
+
+    for($j=1;$j<7;$j++){
+        ${$previewArr[$i].$j} = $j;
+    }
+
+}
+
+//var_export($preview_check_3);

@@ -23,7 +23,8 @@ class DesignerController extends Controller
         $designers = Designer::with(['photo' =>
                                          function ($query) {
                                              $query->where("is_hidden", 'F');
-                                         }])->where("is_hidden", 'F')->paginate(5);
+                                         }])->where("is_hidden", 'F')
+            ->orderBy('created_at','desc')->orderBy('updated_at','desc')->paginate(15);
 //        dd($designers);
         return view('admin.designer.index', compact('designers'));
     }

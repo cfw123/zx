@@ -74,7 +74,6 @@
             <div class="row cl">
                 <label class="form-label col-sm-2"><span class="c-red">*</span>理念</label>
                 <div class="formControls col-sm-4">
-                    <input type="text" class="input-text" value="" name="des">
                     <textarea style="margin: 0px; width: 417px; height: 86px;" rows=”4” cols=”8” name="des"></textarea>
                 </div>
             </div>

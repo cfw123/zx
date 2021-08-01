@@ -5,8 +5,14 @@
 
     <div class="page-container">
         <div class="cl pd-5 bg-1 bk-gray mt-20"><span class="l">
-            <a href="{{ route('admin.designer.create')}}" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加设计师或工长</a></span>
+            <a href="{{ route('admin.designer.create',['type'=>'designer']) }}" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加设计师</a></span>
+            &nbsp;
+            &nbsp;
+
+            <a href="{{ route('admin.designer.create',['type'=>'work']) }}" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加工长</a></span>
+
         </div>
+
         <div class="mt-20">
             <table class="table table-border table-bordered table-hover table-bg table-sort">
                 <thead>
